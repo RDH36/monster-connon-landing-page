@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "title": "Monster Cannon — Aim. Bounce. Destroy everything.",
+    "description": "The roguelike cannon game where every shot counts. Ricochet your ball, survive endless waves, upgrade your cannon. Zero forced ads, zero paywall. Coming soon to Google Play.",
+    "ogDescription": "Free roguelike arcade game, no forced ads. Pre-register for beta access + an exclusive launch skin."
+  },
+  "nav": {
+    "game": "The game",
+    "free": "100% free",
+    "faq": "FAQ",
+    "preRegister": "Pre-register"
+  },
+  "hero": {
+    "badge": "💥 COMING SOON TO GOOGLE PLAY",
+    "titleLine1": "AIM. BOUNCE.",
+    "titleLine2": "DESTROY EVERYTHING.",
+    "subtitle": "Launch your ball, ricochet it off the walls, pierce through hordes of monsters and survive <hl>endless waves</hl>. Upgrade your cannon run after run.",
+    "tags": ["ROGUELIKE", "ZERO FORCED ADS", "100% FREE"],
+    "phone": {
+      "wave": "WAVE 23",
+      "hint": "DRAG TO AIM",
+      "ammo": "AMMO",
+      "boss": "⚠ BOSS"
+    }
+  },
+  "waitlist": {
+    "emailPlaceholder": "you@email.com",
+    "button": "Notify me",
+    "buttonPlay": "I want to play",
+    "beta": "I want early beta access",
+    "microcopy": "Free. One email, zero spam. Unsubscribe in 1 click. By signing up, you agree to our <a>privacy policy</a>.",
+    "toastTitle": "You're on the list! 🎯",
+    "toastBeta": "We'll send you the beta invite + the launch alert.",
+    "toastNoBeta": "We'll let you know the moment Monster Cannon launches."
+  },
+  "problem": {
+    "heading": "Let's be honest: mobile games have let you down.",
+    "pains": [
+      {
+        "icon": "🚫",
+        "title": "An ad every 30 seconds",
+        "body": "You clear 2 levels and BAM — 30 seconds of an ad you can't skip. The \"free game\" costs you your patience."
+      },
+      {
+        "icon": "💸",
+        "title": "The disguised paywall",
+        "body": "\"Want to keep going? $4.99 or wait 6 hours.\" The fun is held hostage by your wallet."
+      },
+      {
+        "icon": "🥱",
+        "title": "Gameplay with no depth",
+        "body": "Tap, tap, tap. No decisions, no skill, no reason to come back. Uninstalled in 3 days."
+      }
+    ],
+    "agitation": "You download a game to unwind for 5 minutes, not to get harassed. The worst part? These games could be great — but they're built to extract money from you, not to entertain you."
+  },
+  "solution": {
+    "heading": "Monster Cannon is the complete opposite. 💥",
+    "valueProp": "The pure satisfaction of a ball that ricochets perfectly — like a clean pool shot — with the depth of a real roguelike. You progress through skill, never through your credit card.",
+    "benefits": [
+      {
+        "icon": "🎯",
+        "title": "A deeply satisfying core move",
+        "body": "Touch, drag, aim, release. Your ball bounces off the walls and pierces through monsters. A single shot that clears half the screen after 4 bounces? That thrill is exactly what you'll keep chasing."
+      },
+      {
+        "icon": "♾️",
+        "title": "Endless waves, never twice the same",
+        "body": "The difficulty rises forever. The further you go, the more intense it gets. Your high score is never safe — there's always \"one more wave\" to reach."
+      },
+      {
+        "icon": "⚔️",
+        "title": "Roguelike progression that makes you stronger",
+        "body": "Between each wave, pick one upgrade out of 3: +damage, piercing ball, lifesteal, explosions… Every run builds a unique build. You die, you restart, you go further."
+      },
+      {
+        "icon": "🎁",
+        "title": "Honest free-to-play. Promise.",
+        "body": "Zero forced ads. Zero paywall. Ads are 100% optional (a revive if YOU want it). Unlock skins by beating bosses, not by pulling out your card."
+      }
+    ]
+  },
+  "features": {
+    "heading": "Small game. <hl>Huge depth.</hl>",
+    "items": [
+      {
+        "emoji": "🎓",
+        "tag": "The Boss-Teachers",
+        "headline": "Every boss teaches you a new way to play.",
+        "body": "Every 10 waves, a boss introduces a new mechanic: obstacles, moving enemies, shields, splitting monsters… They stack up. By wave 50, you're juggling them all at once."
+      },
+      {
+        "emoji": "📐",
+        "tag": "Predictive trajectory",
+        "headline": "The more you think, the more damage you deal.",
+        "body": "A dotted line shows you the next 3 bounces before you fire. Bank off the walls, hit enemies hiding behind obstacles, chain ricochets. Skill is seeing the shot others can't."
+      },
+      {
+        "emoji": "🎨",
+        "tag": "Skins, achievements & daily",
+        "headline": "Always a good reason to come back tomorrow.",
+        "body": "Beat bosses to unlock cannon skins (Bronze → Legendary). Collect 15 achievements. Log in 7 days in a row for the exclusive Rainbow skin."
+      },
+      {
+        "emoji": "⏱️",
+        "tag": "Built for short sessions",
+        "headline": "30 seconds or 30 minutes — you decide.",
+        "body": "Tutorial in under 60 seconds, instant run. Perfect for the commute or a coffee break. Your high score and coins are always there when you come back."
+      },
+      {
+        "emoji": "🔊",
+        "tag": "The juice that feels good",
+        "headline": "It punches, it rumbles, it rewards.",
+        "body": "Screen shake, impact flashes, vibration on every shot, punchy SFX and music that ramps up on bosses. Every monster you pop is a micro-reward."
+      }
+    ]
+  },
+  "free": {
+    "heading": "100% Free. <hl>0% rip-off.</hl>",
+    "othersTitle": "❌ Other mobile games",
+    "usTitle": "✅ Monster Cannon",
+    "rows": [
+      { "others": "Forced ads every 30s", "us": "Zero forced ads" },
+      { "others": "\"Pay or wait\" paywalls", "us": "No paywall" },
+      { "others": "$9.99 skins", "us": "Skins earned by playing" },
+      { "others": "Pay-to-win", "us": "Skill-to-win" }
+    ]
+  },
+  "social": {
+    "heading": "Be among the very first to draw.",
+    "perks": [
+      {
+        "icon": "🎮",
+        "title": "Open beta program",
+        "body": "Play the game before everyone else, share your feedback, shape the final game."
+      },
+      {
+        "icon": "🎁",
+        "title": "Exclusive launch skin",
+        "body": "Reserved for life for pre-registered players. No one else will have it."
+      },
+      {
+        "icon": "📣",
+        "title": "Discord community",
+        "body": "Join the first Cannon Masters, vote on the next mechanics."
+      }
+    ],
+    "trust": [
+      "✅ Built with Unity — 60 FPS, under 100 MB",
+      "✅ Coming soon to Google Play",
+      "✅ Free forever"
+    ]
+  },
+  "faq": {
+    "heading": "Frequently asked questions",
+    "items": [
+      {
+        "q": "What exactly is Monster Cannon?",
+        "a": "A roguelike arcade game: you control a cannon, you fire balls that bounce off walls and pierce through monsters. Survive endless waves of rising difficulty by upgrading your cannon every wave."
+      },
+      {
+        "q": "Is it really free?",
+        "a": "Yes, 100% free. A free-to-play model funded by optional rewarded ads only. No mandatory in-app purchases, no forced ads."
+      },
+      {
+        "q": "Which platforms?",
+        "a": "Android (Google Play) at launch. Pre-registration is open right now."
+      },
+      {
+        "q": "When does the game come out?",
+        "a": "Soon — the game is in active development. Pre-register to be notified on launch day and get priority beta access."
+      },
+      {
+        "q": "How do I join the beta?",
+        "a": "Enter your email and check \"I want to test the beta\". We send invites in waves to the first sign-ups."
+      },
+      {
+        "q": "Do I need an internet connection to play?",
+        "a": "The game is playable offline. A connection is only used for the optional rewarded ads."
+      },
+      {
+        "q": "What do I get by pre-registering now?",
+        "a": "Priority beta access, an exclusive launch cannon skin (reserved for life for pre-registered players) and the guarantee of being notified as soon as it's out."
+      },
+      {
+        "q": "Will the game be available in English?",
+        "a": "Yes — Monster Cannon is available in French and English from launch."
+      }
+    ]
+  },
+  "finalCta": {
+    "heading": "Your cannon is waiting. <hl>Be the first to fire.</hl>",
+    "supporting": "Pre-register today for priority beta access, your exclusive launch skin, and an alert the second the game drops. The only thing you risk is getting hooked."
+  },
+  "footer": {
+    "tagline": "Free forever. Zero forced ads, ever.",
+    "faq": "FAQ",
+    "preRegister": "Pre-register",
+    "privacyGame": "Game Privacy",
+    "termsGame": "Game Terms",
+    "privacySite": "Site Privacy",
+    "termsSite": "Site Terms",
+    "copyright": "© {year} Monster Cannon — RDH. In development."
+  },
+  "lang": {
+    "label": "Language",
+    "fr": "Français",
+    "en": "English"
+  },
+  "legal": {
+    "back": "Back",
+    "updatedLabel": "Last updated"
+  },
+  "legalPages": {
+    "privacyGame": {
+      "title": "Game Privacy Policy",
+      "updatedAt": "June 3, 2026",
+      "description": "How the Monster Cannon game handles your data: local save, rewarded ads, children's privacy and your rights."
+    },
+    "termsGame": {
+      "title": "Game Terms of Use",
+      "updatedAt": "June 3, 2026",
+      "description": "The license agreement and rules for using the Monster Cannon game (license, virtual currencies, conduct, intellectual property)."
+    },
+    "privacySite": {
+      "title": "Privacy Policy",
+      "updatedAt": "June 3, 2026",
+      "description": "How the Monster Cannon website collects, uses and protects your personal data."
+    },
+    "termsSite": {
+      "title": "Terms of Use",
+      "updatedAt": "June 3, 2026",
+      "description": "The terms governing the use of the Monster Cannon pre-registration website."
+    }
+  }
+}

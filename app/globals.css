@@ -1,26 +1,340 @@
 @import "tailwindcss";
 
+@custom-variant dark (&:is(.dark *));
+
+/*
+  Monster Cannon — Design System v1.0 (cozy cartoon / twilight).
+  Palette, polices et recettes 3D repris du design system officiel (RDH36).
+*/
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --radius: 18px;
+
+  /* Ink / outline */
+  --ink: #2b1638;
+  --ink-soft: #5a3b7a;
+  --paper: #fffaeb;
+
+  /* Brand */
+  --primary-hex: #7a3fc8;
+  --primary-dark: #4a2390;
+  --primary-light: #c39cf0;
+
+  /* Accent / or */
+  --gold: #ffd64a;
+  --gold-mid: #e89a1f;
+  --accent-hex: #ffb627;
+  --accent-dark: #c25e07;
+  --label-gold: #ffe9a8;
+
+  /* Fonctionnel */
+  --hp: #62d547;
+  --hp-dark: #1f7a14;
+  --boss: #ff3d81;
+  --boss-dark: #b6175a;
+  --gem: #2ee0cf;
+  --danger: #ff5a3f;
+  --danger-dark: #c13016;
+
+  /* Texte secondaire */
+  --muted-purple: #c8a8f0;
+  --dim-purple: #8b6fac;
+
+  /* === Tokens shadcn mappés sur la palette twilight === */
+  --background: #1a0e2e;
+  --foreground: #fffaeb;
+  --card: #2b1638;
+  --card-foreground: #fffaeb;
+  --popover: #2b1638;
+  --popover-foreground: #fffaeb;
+  --primary: #7a3fc8;
+  --primary-foreground: #ffffff;
+  --secondary: #3a2350;
+  --secondary-foreground: #fffaeb;
+  --muted: #2b1638;
+  --muted-foreground: #c8a8f0;
+  --accent: #ffb627;
+  --accent-foreground: #2b1638;
+  --destructive: #ff5a3f;
+  --destructive-foreground: #ffffff;
+  --border: #5a3b7a;
+  --input: #5a3b7a;
+  --ring: #ffb627;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+
+  /* Couleurs jeu exposées en utilitaires Tailwind */
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-paper: var(--paper);
+  --color-gold: var(--gold);
+  --color-hp: var(--hp);
+  --color-boss: var(--boss);
+  --color-gem: var(--gem);
+  --color-primary-light: var(--primary-light);
+  --color-label-gold: var(--label-gold);
+  --color-dim-purple: var(--dim-purple);
+
+  --radius-sm: 10px;
+  --radius-md: 18px;
+  --radius-lg: 26px;
+  --radius-xl: 36px;
+
+  --font-sans: var(--font-body);
+  --font-display: var(--font-display);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@layer base {
+  * {
+    border-color: var(--border);
+  }
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: var(--font-body), system-ui, sans-serif;
+    font-weight: 800;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display), system-ui, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.5px;
   }
 }
 
-body {
-  background: var(--background);
+/* === Recettes signature du design system === */
+
+/* Titre cartoon : contour ink + ombre portée violette */
+@utility title-stroke {
+  color: var(--paper);
+  text-shadow:
+    -3px 0 0 var(--ink), 3px 0 0 var(--ink), 0 -3px 0 var(--ink),
+    0 3px 0 var(--ink), 0 6px 0 var(--primary-hex),
+    0 10px 16px rgba(0, 0, 0, 0.5);
+}
+
+/* Fond twilight avec halos or + violet */
+@utility bg-twilight {
+  background:
+    radial-gradient(circle at 70% 25%, rgba(255, 182, 39, 0.16), transparent 55%),
+    radial-gradient(circle at 18% 80%, rgba(122, 63, 200, 0.3), transparent 55%),
+    linear-gradient(180deg, #2b1638 0%, #1a0e2e 100%);
+}
+
+/* Carte cartoon papier */
+@utility card-paper {
+  background: linear-gradient(180deg, #fffaeb 0%, #ffe9b0 100%);
+  border: 3px solid var(--ink);
+  border-radius: var(--radius);
+  box-shadow:
+    inset 0 -3px 0 0 rgba(0, 0, 0, 0.1),
+    inset 0 2px 0 0 rgba(255, 255, 255, 0.55), 0 4px 0 0 var(--ink);
+  color: var(--ink);
+}
+
+/* Boutons chunky 3D */
+@utility btn-game {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  border-radius: 22px;
+  font-family: var(--font-display), sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  padding: 13px 26px 15px;
+  color: #fff;
+  cursor: pointer;
+  border: 4px solid var(--ink);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--primary-hex) 40%, #fff) 0%,
+    var(--primary-hex) 35%,
+    var(--primary-hex) 65%,
+    var(--primary-dark) 100%
+  );
+  box-shadow:
+    inset 0 -6px 0 0 rgba(0, 0, 0, 0.22),
+    inset 0 6px 0 0 rgba(255, 255, 255, 0.32),
+    0 6px 0 0 var(--primary-dark), 0 8px 0 0 var(--ink),
+    0 10px 18px -4px rgba(43, 22, 56, 0.5);
+  text-shadow:
+    -2px 0 0 var(--primary-dark), 2px 0 0 var(--primary-dark),
+    0 -2px 0 var(--primary-dark), 0 2px 0 var(--primary-dark);
+  transition: transform 80ms ease, box-shadow 80ms ease;
+}
+@utility btn-game-active {
+  &:active {
+    transform: translateY(4px);
+  }
+}
+
+/* Variante verte (action positive : JOUER / s'inscrire) */
+@utility btn-game-hp {
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--hp) 45%, #fff) 0%,
+    var(--hp) 40%,
+    var(--hp) 65%,
+    var(--hp-dark) 100%
+  );
+  box-shadow:
+    inset 0 -6px 0 0 rgba(0, 0, 0, 0.22),
+    inset 0 6px 0 0 rgba(255, 255, 255, 0.4), 0 6px 0 0 var(--hp-dark),
+    0 8px 0 0 var(--ink), 0 10px 18px -4px rgba(43, 22, 56, 0.5);
+  text-shadow:
+    -2px 0 0 var(--hp-dark), 2px 0 0 var(--hp-dark), 0 -2px 0 var(--hp-dark),
+    0 2px 0 var(--hp-dark);
+}
+
+/* Variante or (CTA secondaire) */
+@utility btn-game-gold {
+  color: var(--ink);
+  background: linear-gradient(
+    180deg,
+    #ffe9a8 0%,
+    var(--gold) 40%,
+    var(--accent-hex) 70%,
+    var(--accent-dark) 100%
+  );
+  box-shadow:
+    inset 0 -6px 0 0 rgba(0, 0, 0, 0.18),
+    inset 0 6px 0 0 rgba(255, 255, 255, 0.5), 0 6px 0 0 var(--accent-dark),
+    0 8px 0 0 var(--ink), 0 10px 18px -4px rgba(43, 22, 56, 0.5);
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+/* === Pages légales === */
+.legal-prose {
+  color: var(--muted-purple);
+  font-weight: 600;
+  line-height: 1.7;
+}
+.legal-prose h2 {
+  font-family: var(--font-display), sans-serif;
+  color: var(--paper);
+  font-size: 1.5rem;
+  margin: 2.25rem 0 0.75rem;
+}
+.legal-prose h3 {
+  font-family: var(--font-display), sans-serif;
+  color: var(--label-gold);
+  font-size: 1.1rem;
+  margin: 1.4rem 0 0.5rem;
+}
+.legal-prose p {
+  margin-bottom: 0.9rem;
+}
+.legal-prose ul {
+  list-style: disc;
+  padding-left: 1.3rem;
+  margin-bottom: 0.9rem;
+}
+.legal-prose li {
+  margin-bottom: 0.4rem;
+}
+.legal-prose a {
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+.legal-prose strong {
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* === Animations de l'arène (hero phone) === */
+@keyframes mc-bob {
+  0%, 100% {
+    transform: translateY(0) scale(1, 1);
+  }
+  50% {
+    transform: translateY(-4px) scale(1.02, 0.97);
+  }
+}
+@keyframes mc-range {
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+@keyframes mc-hint {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.85;
+  }
+  50% {
+    transform: scale(1.05);
+    opacity: 1;
+  }
+}
+@keyframes mc-aim {
+  0%, 100% {
+    opacity: 0.4;
+  }
+  50% {
+    opacity: 0.85;
+  }
+}
+.mc-bob {
+  animation: mc-bob 2.4s ease-in-out infinite;
+}
+.mc-range {
+  animation: mc-range 16s linear infinite;
+}
+.mc-hint {
+  animation: mc-hint 1.5s ease-in-out infinite;
+}
+.mc-aim {
+  animation: mc-aim 1.6s ease-in-out infinite;
+}
+.mc-mob {
+  filter: drop-shadow(-1.5px 0 0 var(--ink)) drop-shadow(1.5px 0 0 var(--ink))
+    drop-shadow(0 -1.5px 0 var(--ink)) drop-shadow(0 1.5px 0 var(--ink))
+    drop-shadow(0 4px 0 rgba(43, 22, 56, 0.45));
+}
+@media (prefers-reduced-motion: reduce) {
+  .mc-bob, .mc-range, .mc-hint, .mc-aim {
+    animation: none;
+  }
+}
+
+/* Pilule eyebrow dorée */
+@utility eyebrow-gold {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: linear-gradient(180deg, #ffd64a 0%, #c25e07 100%);
+  color: #2b1638;
+  font-family: var(--font-display), sans-serif;
+  letter-spacing: 2px;
+  border: 3px solid #2b1638;
+  border-radius: 999px;
+  padding: 5px 16px 7px;
+  box-shadow:
+    inset 0 -2px 0 0 rgba(0, 0, 0, 0.2),
+    inset 0 1.5px 0 0 rgba(255, 255, 255, 0.4), 0 3px 0 0 #2b1638;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }
