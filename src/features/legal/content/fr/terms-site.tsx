@@ -6,48 +6,40 @@ export default function TermsSiteFr() {
     <>
       <p>
         Les présentes conditions d&apos;utilisation (« Conditions ») régissent
-        l&apos;accès et l&apos;utilisation du site de pré-inscription de{" "}
-        <strong>Monster Cannon</strong> (« le Site ») et, à terme, du jeu mobile
-        Monster Cannon (« le Jeu »). En utilisant le Site, tu acceptes ces
+        l&apos;accès et l&apos;utilisation du site de{" "}
+        <strong>Monster Cannon</strong> (« le Site ») et du jeu mobile Monster
+        Cannon (« le Jeu »). En utilisant le Site, tu acceptes ces
         Conditions.
       </p>
 
       <h2>1. Objet</h2>
       <p>
-        Le Site a pour seul objet de présenter le Jeu, en cours de développement,
-        et de te permettre de t&apos;inscrire à une liste d&apos;attente pour être
-        informé de son lancement et de l&apos;ouverture de la bêta.
+        Le Site a pour seul objet de présenter le Jeu et de renvoyer vers sa fiche
+        Google Play. Il ne propose aucun formulaire, aucun compte et aucune
+        inscription.
       </p>
 
-      <h2>2. Statut de développement</h2>
+      <h2>2. Évolution du Jeu</h2>
       <p>
-        Le Jeu est <strong>en cours de développement</strong>. Les
-        fonctionnalités, dates et contenus annoncés sont indicatifs et peuvent
-        évoluer. La pré-inscription ne garantit ni une date de sortie précise, ni
-        un accès automatique à la bêta, dont les places peuvent être limitées.
+        Le Jeu est <strong>publié et mis à jour régulièrement</strong>. Les
+        fonctionnalités et contenus décrits sur le Site correspondent à la version
+        en ligne au moment de la rédaction et peuvent évoluer d&apos;une mise à
+        jour à l&apos;autre.
       </p>
 
-      <h2>3. Pré-inscription</h2>
-      <ul>
-        <li>
-          Tu t&apos;engages à fournir une adresse e-mail valide t&apos;appartenant.
-        </li>
-        <li>
-          L&apos;inscription est gratuite et sans engagement ; tu peux te
-          désinscrire à tout moment.
-        </li>
-        <li>
-          Nous traitons ton adresse conformément à notre{" "}
-          <Link href="/confidentialite">Politique de confidentialité</Link>.
-        </li>
-      </ul>
+      <h2>3. Données personnelles</h2>
+      <p>
+        Le Site ne collecte aucune donnée personnelle. Le détail figure dans notre{" "}
+        <Link href="/confidentialite">Politique de confidentialité</Link>.
+      </p>
 
       <h2>4. Modèle économique du Jeu</h2>
       <p>
-        Le Jeu sera <strong>gratuit (free-to-play)</strong>. Il proposera des
-        publicités <strong>récompensées et facultatives</strong> : tu choisis
-        librement de les regarder en échange d&apos;avantages dans le jeu. Aucune
-        publicité forcée n&apos;est imposée. Le contenu et les avantages obtenus en
+        Le Jeu est <strong>gratuit (free-to-play)</strong> et ne contient{" "}
+        <strong>aucun achat intégré</strong>. Il propose des publicités{" "}
+        <strong>récompensées et facultatives</strong> : tu choisis librement de
+        les regarder en échange d&apos;avantages dans le jeu. Aucune publicité
+        forcée n&apos;est imposée. Le contenu et les avantages obtenus en
         jeu n&apos;ont aucune valeur monétaire réelle et ne sont ni échangeables ni
         remboursables.
       </p>

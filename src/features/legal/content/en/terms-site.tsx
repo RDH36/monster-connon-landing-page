@@ -6,41 +6,33 @@ export default function TermsSiteEn() {
     <>
       <p>
         These terms of use (the &quot;Terms&quot;) govern access to and use of the{" "}
-        <strong>Monster Cannon</strong> pre-registration website (&quot;the
-        Site&quot;) and, in time, the Monster Cannon mobile game (&quot;the
-        Game&quot;). By using the Site, you accept these Terms.
+        <strong>Monster Cannon</strong> website (&quot;the Site&quot;) and the
+        Monster Cannon mobile game (&quot;the Game&quot;). By using the Site, you accept these Terms.
       </p>
 
       <h2>1. Purpose</h2>
       <p>
-        The Site&apos;s sole purpose is to present the Game, which is under
-        development, and to let you sign up to a waitlist to be informed of its
-        launch and the opening of the beta.
+        The Site&apos;s sole purpose is to present the Game and to link to its
+        Google Play listing. It offers no form, no account and no sign-up.
       </p>
 
-      <h2>2. Development status</h2>
+      <h2>2. How the Game evolves</h2>
       <p>
-        The Game is <strong>under development</strong>. The announced features,
-        dates and content are indicative and may change. Pre-registration
-        guarantees neither a specific release date nor automatic beta access, for
-        which places may be limited.
+        The Game is <strong>published and updated regularly</strong>. The features
+        and content described on the Site match the version live at the time of
+        writing and may change from one update to the next.
       </p>
 
-      <h2>3. Pre-registration</h2>
-      <ul>
-        <li>You agree to provide a valid email address belonging to you.</li>
-        <li>
-          Sign-up is free and with no commitment; you can unsubscribe at any time.
-        </li>
-        <li>
-          We process your address in accordance with our{" "}
-          <Link href="/confidentialite">Privacy Policy</Link>.
-        </li>
-      </ul>
+      <h2>3. Personal data</h2>
+      <p>
+        The Site collects no personal data. The details are in our{" "}
+        <Link href="/confidentialite">Privacy Policy</Link>.
+      </p>
 
       <h2>4. The Game&apos;s business model</h2>
       <p>
-        The Game will be <strong>free (free-to-play)</strong>. It will offer{" "}
+        The Game is <strong>free (free-to-play)</strong> and contains{" "}
+        <strong>no in-app purchases</strong>. It offers{" "}
         <strong>optional rewarded ads</strong>: you freely choose to watch them in
         exchange for in-game advantages. No forced ads are imposed. The content and
         advantages obtained in the game have no real monetary value and are neither

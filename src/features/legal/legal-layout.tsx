@@ -2,7 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 import { Link } from "@/i18n/navigation";
-import { Footer } from "@/features/landing/footer";
+import { Footer } from "@/features/landing/shell/footer";
 
 export const CONTACT_EMAIL = "raymond.dzeryhago36@gmail.com";
 

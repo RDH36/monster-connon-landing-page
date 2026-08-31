@@ -25,7 +25,7 @@ export default function TermsGameEn() {
       <h2>2. Save and progress</h2>
       <p>
         The Game works <strong>without an account</strong>: your progress (high
-        score, coins, gems, skins, achievements) is stored{" "}
+        score, gold, cannons, achievements) is stored{" "}
         <strong>locally on your device</strong>. As a result:
       </p>
       <ul>
@@ -40,7 +40,7 @@ export default function TermsGameEn() {
 
       <h2>3. Virtual currencies and items</h2>
       <p>
-        The Game contains virtual currencies (coins, gems) and items (skins,
+        The Game contains a virtual currency (gold) and items (cannons,
         upgrades). These elements:
       </p>
       <ul>

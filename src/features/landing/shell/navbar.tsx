@@ -2,12 +2,13 @@ import { useTranslations } from "next-intl";
 
 import { LanguageSwitcher } from "@/components/language-switcher";
 
+import { PlayButton } from "./play-badge";
+
 export function Navbar() {
   const t = useTranslations("nav");
 
   const links = [
     { href: "#features", label: t("game") },
-    { href: "#gratuit", label: t("free") },
     { href: "#faq", label: t("faq") },
   ];
 
@@ -35,12 +36,7 @@ export function Navbar() {
 
         <div className="flex items-center gap-4">
           <LanguageSwitcher />
-          <a
-            href="#waitlist"
-            className="btn-game btn-game-gold btn-game-active !px-5 !py-2.5 !text-[15px]"
-          >
-            {t("preRegister")}
-          </a>
+          <PlayButton />
         </div>
       </nav>
     </header>

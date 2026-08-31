@@ -4,9 +4,10 @@ import { hasLocale, NextIntlClientProvider } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 
-import { Toaster } from "@/components/ui/sonner";
 import { routing } from "@/i18n/routing";
 import "../globals.css";
+
+const SITE_URL = "https://monster-connon-landing-page.vercel.app";
 
 const lilita = Lilita_One({
   weight: "400",
@@ -32,12 +33,21 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "meta" });
   return {
+    metadataBase: new URL(SITE_URL),
     title: t("title"),
     description: t("description"),
     openGraph: {
       title: t("title"),
       description: t("ogDescription"),
       type: "website",
+      locale,
+      images: [{ url: "/og.jpg", width: 1200, height: 630, alt: t("title") }],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: t("title"),
+      description: t("ogDescription"),
+      images: ["/og.jpg"],
     },
   };
 }
@@ -62,10 +72,7 @@ export default async function LocaleLayout({
       style={{ colorScheme: "dark" }}
     >
       <body className="min-h-full flex flex-col">
-        <NextIntlClientProvider>
-          {children}
-          <Toaster position="top-center" richColors theme="dark" />
-        </NextIntlClientProvider>
+        <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>
   );

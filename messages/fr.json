@@ -1,82 +1,99 @@
 {
   "meta": {
     "title": "Monster Cannon — Vise. Rebondis. Détruis tout.",
-    "description": "Le jeu de canon roguelike où chaque tir compte. Fais ricocher ton boulet, survis à des vagues infinies, améliore ton canon. Zéro pub forcée, zéro paywall. Bientôt sur Google Play.",
-    "ogDescription": "Arcade roguelike gratuit, sans pub forcée. Pré-inscris-toi pour l'accès bêta + un skin exclusif de lancement."
+    "description": "Arcade roguelike : fais ricocher ton boulet, survis à des vagues infinies, affronte 5 boss et débloque 21 canons. Zéro pub forcée, aucun achat intégré. Disponible sur Google Play.",
+    "ogDescription": "Vagues infinies, 5 boss, 21 canons à débloquer. Gratuit, sans pub imposée ni achat intégré."
   },
   "nav": {
     "game": "Le jeu",
-    "free": "100% gratuit",
-    "faq": "FAQ",
-    "preRegister": "Pré-inscription"
+    "faq": "FAQ"
+  },
+  "play": {
+    "badgeAlt": "Disponible sur Google Play",
+    "ctaShort": "Jouer",
+    "note": "Android · Gratuit"
   },
   "hero": {
-    "badge": "💥 BIENTÔT SUR GOOGLE PLAY",
+    "badge": "🎮 DISPONIBLE SUR GOOGLE PLAY",
     "titleLine1": "VISE. REBONDIS.",
     "titleLine2": "DÉTRUIS TOUT.",
     "subtitle": "Lance ton boulet, fais-le ricocher sur les murs, traverse des hordes de monstres et survis à des <hl>vagues infinies</hl>. Améliore ton canon partie après partie.",
-    "tags": ["ROGUELIKE", "ZÉRO PUB FORCÉE", "100% GRATUIT"],
-    "phone": {
-      "wave": "VAGUE 23",
-      "hint": "GLISSE POUR VISER",
-      "ammo": "AMMO",
-      "boss": "⚠ BOSS"
-    }
+    "tags": [
+      "ROGUELIKE",
+      "ZÉRO PUB FORCÉE",
+      "AUCUN ACHAT INTÉGRÉ"
+    ]
   },
-  "waitlist": {
-    "emailPlaceholder": "ton@email.com",
-    "button": "Préviens-moi",
-    "buttonPlay": "Je veux y jouer",
-    "beta": "Je veux tester la bêta en avant-première",
-    "microcopy": "Gratuit. Un seul email, zéro spam. Désinscription en 1 clic. En t'inscrivant, tu acceptes notre <a>politique de confidentialité</a>.",
-    "toastTitle": "Tu es sur la liste ! 🎯",
-    "toastBeta": "On t'envoie l'invitation bêta + l'alerte de lancement.",
-    "toastNoBeta": "On te préviens dès que Monster Cannon sort."
-  },
-  "problem": {
-    "heading": "Soyons honnêtes : les jeux mobiles t'ont déçu.",
-    "pains": [
-      {
-        "icon": "🚫",
-        "title": "La pub toutes les 30 secondes",
-        "body": "Tu enchaînes 2 niveaux et BAM — 30 secondes de pub impossible à passer. Le « jeu gratuit » te coûte ta patience."
-      },
-      {
-        "icon": "💸",
-        "title": "Le paywall déguisé",
-        "body": "« Tu veux continuer ? 4,99 € ou attends 6 heures. » Le fun est pris en otage par ton portefeuille."
-      },
-      {
-        "icon": "🥱",
-        "title": "Le gameplay sans fond",
-        "body": "Tape, tape, tape. Aucune décision, aucun skill, aucune raison de revenir. Désinstallé en 3 jours."
-      }
-    ],
-    "agitation": "Tu télécharges un jeu pour décompresser 5 minutes, pas pour te faire harceler. Le pire ? Ces jeux pourraient être géniaux — mais ils sont conçus pour t'extraire de l'argent, pas pour te divertir."
+  "trailer": {
+    "label": "Trailer de Monster Cannon",
+    "soundOn": "Activer le son",
+    "soundOff": "Couper le son",
+    "caption": "34 secondes de jeu, sans montage flatteur."
   },
   "solution": {
-    "heading": "Monster Cannon, c'est l'inverse total. 💥",
-    "valueProp": "La satisfaction pure d'un tir qui ricoche parfaitement — comme un coup de billard réussi — avec la profondeur d'un vrai roguelike. Tu progresses à la skill, jamais à la carte bleue.",
+    "heading": "Un canon. Des rebonds. Zéro pitié. 💥",
+    "valueProp": "La satisfaction pure d'un tir qui ricoche parfaitement — comme un coup de billard réussi — avec la profondeur d'un vrai roguelike. Tu progresses à la skill et à l'or gagné en jouant, jamais à la carte bleue.",
     "benefits": [
       {
         "icon": "🎯",
         "title": "Un geste de jeu ultra-satisfaisant",
-        "body": "Touche, glisse, vise, relâche. Ton boulet ricoche sur les murs et traverse les monstres. Un seul tir qui nettoie la moitié de l'écran après 4 rebonds ? Ce frisson-là, tu vas le chercher encore et encore."
+        "body": "Vise, tire, regarde ton boulet ricocher sur les murs et traverser les monstres. Le canon a un temps de recharge : chaque tir compte, et un bon angle nettoie la moitié de l'écran."
       },
       {
         "icon": "♾️",
-        "title": "Des vagues infinies, jamais deux fois pareilles",
-        "body": "La difficulté monte sans fin. Plus tu vas loin, plus c'est nerveux. Ton record n'est jamais sûr — il y a toujours « une vague de plus » à atteindre."
+        "title": "Des vagues infinies, en temps réel",
+        "body": "Les monstres avancent tout seuls, la difficulté ne s'arrête jamais. Plus tu vas loin, plus c'est nerveux — ton record n'est jamais à l'abri."
       },
       {
         "icon": "⚔️",
-        "title": "Une progression roguelike qui te rend plus fort",
-        "body": "Entre chaque vague, choisis un upgrade parmi 3 : +dégâts, boulet perçant, vampirisme, explosions… Chaque partie construit une build unique. Tu meurs, tu recommences, tu vas plus loin."
+        "title": "Un boost à choisir à chaque fin de vague",
+        "body": "Boulet Robuste (traverse +1 ennemi), Réserve de Boulets (+1 boulet), Boulet Lourd (+1 dégât), Canon Rapide (recharge −0,5 s). Quatre boosts, jamais la même partie."
       },
       {
-        "icon": "🎁",
-        "title": "Free-to-play honnête. Promis.",
-        "body": "Zéro pub forcée. Zéro paywall. Les pubs sont 100 % optionnelles (un revive si TU le veux). Débloque des skins en battant des boss, pas en sortant la carte bleue."
+        "icon": "🧪",
+        "title": "Un laboratoire qui garde tes progrès",
+        "body": "Quatre améliorations permanentes payées en or : trois montent jusqu'au niveau 8, les PV du canon jusqu'au niveau 3. Le coût grimpe au carré — chaque niveau se mérite sur plusieurs parties."
+      }
+    ]
+  },
+  "screenshots": {
+    "heading": "Le jeu, <hl>en vrai.</hl>",
+    "subheading": "Captures prises dans la version actuelle, sans retouche.",
+    "items": [
+      {
+        "key": "01_vague_dense",
+        "tag": "Vagues infinies",
+        "caption": "La vague se sature, l'écran explose. Ça ne s'arrête jamais."
+      },
+      {
+        "key": "02_boss",
+        "tag": "5 boss",
+        "caption": "Blob King, Speedy, Guardian, Splitter, Overlord — aux vagues 10, 20, 30, 40 et 50."
+      },
+      {
+        "key": "03_boosts",
+        "tag": "Progression roguelike",
+        "caption": "En fin de vague, tu choisis ton boost. La run se construit à chaque partie."
+      },
+      {
+        "key": "06_combo",
+        "tag": "Physique satisfaisante",
+        "caption": "Un boulet, plusieurs rebonds, un gros combo et une pluie d'or."
+      },
+      {
+        "key": "07_boutique_canons",
+        "tag": "21 canons",
+        "caption": "Quatre gratuits, les autres de 12 000 à 400 000 or. Purement cosmétiques."
+      },
+      {
+        "key": "08_quetes",
+        "tag": "Quêtes & succès",
+        "caption": "Trois quêtes tirées chaque jour, huit chaînes de succès à paliers, payées en or."
+      },
+      {
+        "key": "09_classement",
+        "tag": "Classement mondial",
+        "caption": "Ta meilleure vague, face au monde entier."
       }
     ]
   },
@@ -84,71 +101,35 @@
     "heading": "Petit jeu. <hl>Énorme profondeur.</hl>",
     "items": [
       {
-        "emoji": "🎓",
-        "tag": "Les Boss-Professeurs",
-        "headline": "Chaque boss t'apprend une nouvelle façon de jouer.",
-        "body": "Toutes les 10 vagues, un boss introduit une nouvelle mécanique : obstacles, ennemis mobiles, boucliers, monstres qui se divisent… Elles s'accumulent. À la vague 50, tu jongles avec tout en même temps."
+        "emoji": "👹",
+        "tag": "Cinq boss",
+        "headline": "Cinq boss, cinq façons de mourir.",
+        "body": "Blob King, Speedy, Guardian, Splitter et Overlord t'attendent aux vagues 10, 20, 30, 40 et 50. Chacun casse une habitude que tu viens juste de prendre."
       },
       {
-        "emoji": "📐",
-        "tag": "Trajectoire prédictive",
-        "headline": "Plus tu réfléchis, plus tu fais de dégâts.",
-        "body": "Une ligne pointillée te montre les 3 prochains rebonds avant de tirer. Banque sur les murs, vise les ennemis cachés, enchaîne les ricochets. Le skill, c'est voir le coup que les autres ne voient pas."
+        "emoji": "🧪",
+        "tag": "Laboratoire",
+        "headline": "Ta progression reste, même quand tu meurs.",
+        "body": "Quatre améliorations permanentes achetées en or. Le coût monte au carré : arriver au niveau 8 demande plusieurs parties, et ça se sent au tir suivant."
       },
       {
         "emoji": "🎨",
-        "tag": "Skins, succès & daily",
-        "headline": "Toujours une bonne raison de revenir demain.",
-        "body": "Bats les boss pour débloquer des skins de canon (Bronze → Légendaire). Collectionne 15 succès. Connecte-toi 7 jours d'affilée pour le skin Rainbow exclusif."
+        "tag": "21 canons",
+        "headline": "Débloque, équipe, frime.",
+        "body": "Quatre canons gratuits pour commencer, dix-sept autres entre 12 000 et 400 000 or. Aucun ne modifie tes statistiques : c'est du cosmétique, pas du pay-to-win."
       },
       {
-        "emoji": "⏱️",
-        "tag": "Pensé pour les sessions courtes",
-        "headline": "30 secondes ou 30 minutes — tu décides.",
-        "body": "Tuto en moins de 60 secondes, partie instantanée. Parfait pour les transports ou la pause café. Ton record et tes coins sont toujours là à ton retour."
+        "emoji": "🏆",
+        "tag": "Quêtes & succès",
+        "headline": "Toujours une bonne raison de relancer demain.",
+        "body": "Trois quêtes tirées chaque jour et huit chaînes de succès à paliers, toutes payées en or — l'or qui finance le laboratoire et les canons."
       },
       {
-        "emoji": "🔊",
-        "tag": "Le juice qui fait du bien",
-        "headline": "Ça claque, ça vibre, ça récompense.",
-        "body": "Screen shake, flashs d'impact, vibrations sur chaque tir, SFX punchy et musique qui monte sur les boss. Chaque monstre éclaté est une micro-récompense."
+        "emoji": "🌍",
+        "tag": "Classement mondial",
+        "headline": "Ta meilleure vague, face au monde.",
+        "body": "Un classement en ligne sur la vague atteinte. Le jeu est en français et en anglais, changeable à tout moment dans les réglages."
       }
-    ]
-  },
-  "free": {
-    "heading": "100 % Gratuit. <hl>0 % d'arnaque.</hl>",
-    "othersTitle": "❌ Les autres jeux mobiles",
-    "usTitle": "✅ Monster Cannon",
-    "rows": [
-      { "others": "Pubs forcées toutes les 30 s", "us": "Zéro pub forcée" },
-      { "others": "Paywalls « paye ou attends »", "us": "Aucun paywall" },
-      { "others": "Skins à 9,99 €", "us": "Skins gagnés en jouant" },
-      { "others": "Pay-to-win", "us": "Skill-to-win" }
-    ]
-  },
-  "social": {
-    "heading": "Sois parmi les tout premiers à dégainer.",
-    "perks": [
-      {
-        "icon": "🎮",
-        "title": "Programme bêta ouvert",
-        "body": "Teste le jeu avant tout le monde, donne ton avis, façonne le jeu final."
-      },
-      {
-        "icon": "🎁",
-        "title": "Skin de lancement exclusif",
-        "body": "Réservé à vie aux joueurs pré-inscrits. Personne d'autre ne l'aura."
-      },
-      {
-        "icon": "📣",
-        "title": "Communauté Discord",
-        "body": "Rejoins les premiers Cannon Masters, vote pour les prochaines mécaniques."
-      }
-    ],
-    "trust": [
-      "✅ Développé sous Unity — 60 FPS, moins de 100 Mo",
-      "✅ Bientôt sur Google Play",
-      "✅ Gratuit pour toujours"
     ]
   },
   "faq": {
@@ -156,51 +137,61 @@
     "items": [
       {
         "q": "C'est quoi Monster Cannon exactement ?",
-        "a": "Un jeu d'arcade roguelike : tu contrôles un canon, tu tires des boulets qui ricochent sur les murs et traversent les monstres. Survis à des vagues infinies de difficulté croissante en améliorant ton canon à chaque vague."
+        "a": "Un jeu d'arcade roguelike : tu contrôles un canon, tu tires des boulets qui ricochent sur les murs et traversent les monstres. Le combat est en temps réel, les vagues sont infinies, et tu choisis un boost à la fin de chaque vague."
       },
       {
         "q": "C'est vraiment gratuit ?",
-        "a": "Oui, 100 % gratuit. Modèle free-to-play financé par des pubs récompensées optionnelles uniquement. Aucun achat intégré obligatoire, aucune pub forcée."
+        "a": "Oui. Aucun achat intégré, aucune pub interstitielle. Les seules pubs sont deux boutons que tu déclenches toi-même : revivre après la mort (5 fois par jour maximum) et doubler l'or d'une partie (2 fois par jour maximum). Toute l'économie du jeu tourne à l'or gagné en jouant."
+      },
+      {
+        "q": "Les canons rendent-ils plus fort ?",
+        "a": "Non. Les 21 canons sont purement cosmétiques, aucun ne modifie tes statistiques. Ce qui te rend plus fort, ce sont les boosts choisis pendant la partie et les quatre améliorations permanentes du laboratoire."
+      },
+      {
+        "q": "Combien de boss y a-t-il ?",
+        "a": "Cinq : Blob King (vague 10), Speedy (20), Guardian (30), Splitter (40) et Overlord (50)."
       },
       {
         "q": "Sur quelles plateformes ?",
-        "a": "Android (Google Play) au lancement. La pré-inscription est ouverte dès maintenant."
-      },
-      {
-        "q": "Quand sort le jeu ?",
-        "a": "Bientôt — le jeu est en développement actif. Pré-inscris-toi pour être prévenu le jour J et obtenir l'accès bêta prioritaire."
-      },
-      {
-        "q": "Comment je rejoins la bêta ?",
-        "a": "Inscris ton email et coche « Je veux tester la bêta ». On envoie les invitations par vagues aux premiers inscrits."
+        "a": "Android, sur Google Play."
       },
       {
         "q": "Il faut une connexion internet pour jouer ?",
-        "a": "Le jeu est jouable hors-ligne. Une connexion sert uniquement aux pubs récompensées optionnelles."
+        "a": "Non, le jeu se joue hors ligne. Une connexion sert uniquement aux pubs à récompense optionnelles et au classement mondial."
       },
       {
-        "q": "Qu'est-ce que je gagne à me pré-inscrire maintenant ?",
-        "a": "Accès bêta prioritaire, un skin de canon exclusif de lancement (réservé à vie aux pré-inscrits) et la garantie d'être prévenu dès la sortie."
+        "q": "Le jeu est-il en français ?",
+        "a": "Oui — français et anglais, changeable à tout moment dans les réglages."
       },
       {
-        "q": "Le jeu sera-t-il en français ?",
-        "a": "Oui — Monster Cannon est disponible en français et en anglais dès le lancement."
+        "q": "Le jeu collecte-t-il mes données ?",
+        "a": "Uniquement des statistiques d'usage anonymes (vague atteinte, boosts choisis, langue, modèle d'appareil) pour équilibrer le jeu. Aucun compte, aucune adresse email, aucune donnée de contact. Le détail est sur la page Confidentialité du jeu."
       }
     ]
   },
   "finalCta": {
-    "heading": "Ton canon t'attend. <hl>Sois le premier à tirer.</hl>",
-    "supporting": "Pré-inscris-toi aujourd'hui pour l'accès bêta prioritaire, ton skin de lancement exclusif, et l'alerte la seconde où le jeu sort. La seule chose que tu risques, c'est de devenir accro."
+    "heading": "Ton canon t'attend. <hl>Va décrocher ton record.</hl>",
+    "supporting": "Gratuit, sans achat intégré, sans pub imposée. La seule chose que tu risques, c'est de devenir accro.",
+    "trust": [
+      "✅ Développé sous Unity — fluide, pensé pour 60 FPS",
+      "✅ Jouable hors ligne",
+      "✅ Gratuit, sans achat intégré"
+    ]
   },
   "footer": {
-    "tagline": "Gratuit pour toujours. Zéro pub forcée, jamais.",
+    "tagline": "Gratuit. Zéro pub forcée, aucun achat intégré.",
     "faq": "FAQ",
-    "preRegister": "Pré-inscription",
+    "play": "Google Play",
     "privacyGame": "Confidentialité du jeu",
     "termsGame": "Conditions du jeu",
     "privacySite": "Confidentialité du site",
     "termsSite": "Conditions du site",
-    "copyright": "© {year} Monster Cannon — RDH. En développement."
+    "creditsTitle": "Crédits",
+    "credits": [
+      "Icônes : Twemoji (CC BY 4.0) · Lorc, game-icons.net (CC BY 3.0)",
+      "Sons : rubberduck · Musique : 3xBlast — OpenGameArt (CC0)"
+    ],
+    "copyright": "© {year} Monster Cannon — RDH. Disponible sur Google Play."
   },
   "lang": {
     "label": "Langue",
@@ -214,23 +205,23 @@
   "legalPages": {
     "privacyGame": {
       "title": "Confidentialité du jeu",
-      "updatedAt": "3 juin 2026",
-      "description": "Comment le jeu Monster Cannon traite tes données : sauvegarde locale, publicités récompensées, confidentialité des enfants et tes droits."
+      "updatedAt": "31 août 2026",
+      "description": "Comment le jeu Monster Cannon traite tes données : sauvegarde locale, statistiques d'usage anonymes, publicités récompensées, classement en ligne et tes droits."
     },
     "termsGame": {
       "title": "Conditions d'utilisation du jeu",
-      "updatedAt": "3 juin 2026",
-      "description": "Le contrat de licence et les règles d'utilisation du jeu Monster Cannon (licence, monnaies virtuelles, conduite, propriété intellectuelle)."
+      "updatedAt": "31 août 2026",
+      "description": "Le contrat de licence et les règles d'utilisation du jeu Monster Cannon (licence, monnaie virtuelle, conduite, propriété intellectuelle)."
     },
     "privacySite": {
       "title": "Politique de confidentialité",
-      "updatedAt": "3 juin 2026",
-      "description": "Comment le site Monster Cannon collecte, utilise et protège tes données personnelles."
+      "updatedAt": "31 août 2026",
+      "description": "Le site Monster Cannon ne collecte aucune donnée personnelle : ce que ça implique, et où trouver les données traitées par le jeu."
     },
     "termsSite": {
       "title": "Conditions d'utilisation",
-      "updatedAt": "3 juin 2026",
-      "description": "Les conditions qui régissent l'utilisation du site de pré-inscription Monster Cannon."
+      "updatedAt": "31 août 2026",
+      "description": "Les conditions qui régissent l'utilisation du site Monster Cannon."
     }
   }
 }

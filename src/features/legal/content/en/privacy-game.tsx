@@ -20,12 +20,53 @@ export default function PrivacyGameEn() {
       <p>
         The Game is played <strong>without registration or an account</strong>. We
         do not ask you for any identifying personal data (name, email, phone). Your
-        progress (high score, coins, gems, skins, achievements, settings) is stored{" "}
-        <strong>only locally on your device</strong> and is not sent to our
-        servers.
+        progress (high score, gold, unlocked cannons, lab upgrades, achievements,
+        settings) is stored <strong>locally on your device</strong>. Two
+        exceptions, described below: the <strong>best wave you reached</strong>,
+        sent to the global leaderboard, and{" "}
+        <strong>anonymous usage statistics</strong>.
       </p>
 
-      <h2>3. Data processed by third-party services</h2>
+      <h2>3. Anonymous usage statistics</h2>
+      <p>
+        Since August 30, 2026, the Game sends{" "}
+        <strong>anonymous usage statistics</strong> to <strong>PostHog</strong>,
+        our analytics processor (servers located in the United States). What is
+        sent:
+      </p>
+      <ul>
+        <li>
+          <strong>progression events</strong> (wave reached, boosts picked);
+        </li>
+        <li>rewarded ads watched and gold purchases;</li>
+        <li>
+          <strong>language</strong>, <strong>device model</strong> and{" "}
+          <strong>app version</strong>.
+        </li>
+      </ul>
+      <p>
+        <strong>No account, no email address, no contact details</strong> are
+        transmitted. This data is used solely to{" "}
+        <strong>balance the game and detect crashes</strong>. It is encrypted in
+        transit and kept for <strong>12 months at most</strong>, then deleted. See{" "}
+        <a
+          href="https://posthog.com/privacy"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          PostHog&apos;s privacy policy
+        </a>
+        .
+      </p>
+
+      <h2>4. Global leaderboard</h2>
+      <p>
+        If you play while online, the <strong>best wave you reached</strong> is
+        sent to the online leaderboard to rank you. No identifying data is
+        attached to it.
+      </p>
+
+      <h2>5. Data processed by third-party services</h2>
       <h3>Rewarded ads</h3>
       <p>
         The Game offers <strong>optional rewarded ads</strong> provided by
@@ -64,7 +105,7 @@ export default function PrivacyGameEn() {
         .
       </p>
 
-      <h2>4. Purposes and legal bases</h2>
+      <h2>6. Purposes and legal bases</h2>
       <ul>
         <li>
           Enabling the Game to work and saving your progress locally —{" "}
@@ -74,16 +115,25 @@ export default function PrivacyGameEn() {
           Serving rewarded ads that you choose to watch — <strong>your consent</strong>
           , collected in the Game before they are shown.
         </li>
+        <li>
+          Measuring how the Game is used, anonymously, to balance it and fix
+          crashes — <strong>legitimate interest</strong>.
+        </li>
+        <li>
+          Showing your best wave on the global leaderboard —{" "}
+          <strong>performance of the service</strong>.
+        </li>
       </ul>
 
-      <h2>5. Device permissions</h2>
+      <h2>7. Device permissions</h2>
       <p>
         The Game uses <strong>internet access</strong> only to load the rewarded
-        ads. It does not request access to your contacts, precise location,
-        microphone or photos.
+        ads, send the anonymous usage statistics and update the global
+        leaderboard. It does not request access to your contacts, precise
+        location, microphone or photos.
       </p>
 
-      <h2>6. Children&apos;s privacy</h2>
+      <h2>8. Children&apos;s privacy</h2>
       <p>
         The Game is not specifically directed at children under 13. In accordance
         with Google Play rules and applicable laws, ads are configured
@@ -91,38 +141,40 @@ export default function PrivacyGameEn() {
         with data, contact us for any deletion request.
       </p>
 
-      <h2>7. Retention and deletion</h2>
+      <h2>9. Retention and deletion</h2>
       <p>
         Progress data stays on your device until you{" "}
         <strong>uninstall the Game</strong> or clear its data, which permanently
         deletes it. You can reset or delete your advertising identifier at any time
-        in your <strong>Android settings</strong> (Privacy &gt; Ads).
+        in your <strong>Android settings</strong> (Privacy &gt; Ads). Anonymous
+        usage statistics are kept for 12 months at most.
       </p>
 
-      <h2>8. Your rights</h2>
+      <h2>10. Your rights</h2>
       <p>
         Under the GDPR, you have the right to access, rectification, erasure,
-        restriction, objection and portability. As we store no personal data on our
-        servers, these rights are mainly exercised via your device and the ad
-        networks&apos; settings. For any request, email us at{" "}
+        restriction, objection and portability. As we store no identifying data on
+        our servers — usage statistics are anonymous and the leaderboard only holds
+        your best wave — these rights are mainly exercised via your device and the
+        ad networks&apos; settings. For any request, email us at{" "}
         <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. You may also lodge
         a complaint with the relevant data protection authority.
       </p>
 
-      <h2>9. Security</h2>
+      <h2>11. Security</h2>
       <p>
         We implement reasonable measures to protect the Game. As no method of
         transmission or storage is fully secure, we cannot guarantee absolute
         security.
       </p>
 
-      <h2>10. Changes</h2>
+      <h2>12. Changes</h2>
       <p>
         This policy may be updated, in particular if the Game or the ad networks
         change. The update date appears at the top of this page.
       </p>
 
-      <h2>11. Contact</h2>
+      <h2>13. Contact</h2>
       <p>
         For any question about the Game&apos;s privacy, email us at{" "}
         <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.

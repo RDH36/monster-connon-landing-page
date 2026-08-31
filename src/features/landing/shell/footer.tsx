@@ -1,5 +1,6 @@
 import { useLocale, useTranslations } from "next-intl";
 
+import { PLAY_URL } from "@/features/landing/assets";
 import { Link } from "@/i18n/navigation";
 
 export function Footer() {
@@ -7,6 +8,7 @@ export function Footer() {
   const locale = useLocale();
   const prefix = locale === "fr" ? "" : `/${locale}`;
   const year = new Date().getFullYear();
+  const credits = t.raw("credits") as string[];
 
   return (
     <footer className="border-t border-border/60 py-10">
@@ -21,11 +23,16 @@ export function Footer() {
         <p className="text-sm text-muted-foreground">{t("tagline")}</p>
 
         <nav className="flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
+          <a
+            href={PLAY_URL}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-foreground"
+          >
+            {t("play")}
+          </a>
           <a href={`${prefix}/#faq`} className="hover:text-foreground">
             {t("faq")}
-          </a>
-          <a href={`${prefix}/#waitlist`} className="hover:text-foreground">
-            {t("preRegister")}
           </a>
           <Link href="/confidentialite-jeu" className="hover:text-foreground">
             {t("privacyGame")}
@@ -40,6 +47,18 @@ export function Footer() {
             {t("termsSite")}
           </Link>
         </nav>
+      </div>
+
+      {/* Crédits exigés par les licences des assets utilisés dans le jeu. */}
+      <div className="mx-auto mt-8 max-w-6xl px-4 text-center">
+        <p className="font-display text-[11px] uppercase tracking-wider text-dim-purple">
+          {t("creditsTitle")}
+        </p>
+        {credits.map((line) => (
+          <p key={line} className="mt-1 text-xs text-muted-foreground">
+            {line}
+          </p>
+        ))}
       </div>
 
       <p className="mt-6 text-center text-xs text-muted-foreground">

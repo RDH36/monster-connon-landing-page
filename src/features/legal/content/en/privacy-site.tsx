@@ -5,7 +5,7 @@ export default function PrivacySiteEn() {
     <>
       <p>
         This policy explains how we process your personal data when you use the{" "}
-        <strong>Monster Cannon</strong> pre-registration website (&quot;the
+        <strong>Monster Cannon</strong> website (&quot;the
         Site&quot;) and, in time, the Monster Cannon mobile game (&quot;the
         Game&quot;). We care deeply about protecting your privacy and comply with
         the General Data Protection Regulation (GDPR).
@@ -19,28 +19,27 @@ export default function PrivacySiteEn() {
       </p>
 
       <h2>2. Data we collect</h2>
-      <h3>On the pre-registration site</h3>
+      <h3>On the Site</h3>
+      <p>
+        The Site is a presentation page: it contains{" "}
+        <strong>no form</strong> and asks you for{" "}
+        <strong>no personal data</strong> — no email address, no account, no
+        sign-up.
+      </p>
       <ul>
-        <li>
-          <strong>Email address</strong>: which you provide voluntarily to join the
-          waitlist and be notified of the launch.
-        </li>
-        <li>
-          <strong>Beta preference</strong>: optional indication that you want to
-          take part in the beta test.
-        </li>
         <li>
           <strong>Technical data</strong>: data strictly necessary for the site to
           work (IP address, browser type), processed anonymously for security and
           audience measurement.
         </li>
       </ul>
-      <h3>In the game (coming soon)</h3>
+      <h3>In the game</h3>
       <ul>
         <li>
-          <strong>Game progress</strong>: your high score, coins and skins are
-          stored <strong>locally on your device</strong> (no account required, no
-          data sent to our servers).
+          <strong>Game progress</strong>: your high score, gold and cannons are
+          stored <strong>locally on your device</strong> (no account required).
+          What the game does send — anonymous usage statistics and the global
+          leaderboard — is detailed on the &quot;Game privacy&quot; page.
         </li>
         <li>
           <strong>Rewarded ads</strong>: the Game uses a third-party ad network
@@ -53,10 +52,6 @@ export default function PrivacySiteEn() {
       <h2>3. Purposes and legal bases</h2>
       <ul>
         <li>
-          Keeping you informed about the launch and beta access —{" "}
-          <strong>legal basis: your consent</strong>.
-        </li>
-        <li>
           Ensuring the proper operation and security of the Site —{" "}
           <strong>legal basis: our legitimate interest</strong>.
         </li>
@@ -68,16 +63,16 @@ export default function PrivacySiteEn() {
 
       <h2>4. Retention period</h2>
       <p>
-        Your email address is kept until the Game launches and for a reasonable
-        period afterwards, or until you request to unsubscribe. You can unsubscribe
-        at any time via the link in each of our emails.
+        The Site host&apos;s technical logs are kept for as long as needed for
+        security and audience measurement, then deleted. The Site stores no
+        personal data.
       </p>
 
       <h2>5. Sharing your data</h2>
       <p>
-        We never sell your data. We share it only with our technical providers
-        (hosting, email delivery service) acting on our behalf, as well as with ad
-        networks within the Game. These providers are required to protect your data.
+        We never sell your data. The Site shares it only with its host, acting on
+        our behalf. The data processed within the Game (anonymous statistics, ad
+        networks) is described on the &quot;Game privacy&quot; page.
       </p>
 
       <h2>6. Your rights</h2>
@@ -96,8 +91,8 @@ export default function PrivacySiteEn() {
 
       <h2>8. Minors</h2>
       <p>
-        The Site is not intended for children under 13. If you are a minor, ask your
-        parents&apos; permission before submitting your email address.
+        The Site is not intended for children under 13. It collects no data about
+        them, since it collects none at all.
       </p>
 
       <h2>9. Changes</h2>

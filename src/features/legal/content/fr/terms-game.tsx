@@ -27,7 +27,7 @@ export default function TermsGameFr() {
       <h2>2. Sauvegarde et progression</h2>
       <p>
         Le Jeu fonctionne <strong>sans compte</strong> : ta progression (record,
-        pièces, gemmes, skins, succès) est enregistrée{" "}
+        or, canons, succès) est enregistrée{" "}
         <strong>localement sur ton appareil</strong>. En conséquence :
       </p>
       <ul>
@@ -44,7 +44,7 @@ export default function TermsGameFr() {
 
       <h2>3. Monnaies et objets virtuels</h2>
       <p>
-        Le Jeu contient des monnaies virtuelles (pièces, gemmes) et des objets
+        Le Jeu contient une monnaie virtuelle (l&apos;or) et des objets
         (skins, améliorations). Ces éléments :
       </p>
       <ul>

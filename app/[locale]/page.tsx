@@ -1,15 +1,13 @@
 import { setRequestLocale } from "next-intl/server";
 
-import { Faq } from "@/features/landing/faq";
-import { Features } from "@/features/landing/features";
-import { FinalCta } from "@/features/landing/final-cta";
-import { Footer } from "@/features/landing/footer";
-import { FreeComparison } from "@/features/landing/free-comparison";
-import { Hero } from "@/features/landing/hero";
-import { Navbar } from "@/features/landing/navbar";
-import { Problem } from "@/features/landing/problem";
-import { SocialProof } from "@/features/landing/social-proof";
-import { Solution } from "@/features/landing/solution";
+import { Faq } from "@/features/landing/pitch/faq";
+import { Features } from "@/features/landing/pitch/features";
+import { FinalCta } from "@/features/landing/pitch/final-cta";
+import { Solution } from "@/features/landing/pitch/solution";
+import { Footer } from "@/features/landing/shell/footer";
+import { Navbar } from "@/features/landing/shell/navbar";
+import { Hero } from "@/features/landing/showcase/hero";
+import { Screenshots } from "@/features/landing/showcase/screenshots";
 
 export default async function Home({
   params,
@@ -24,11 +22,9 @@ export default async function Home({
       <Navbar />
       <main className="flex-1">
         <Hero />
-        <Problem />
         <Solution />
+        <Screenshots />
         <Features />
-        <FreeComparison />
-        <SocialProof />
         <Faq />
         <FinalCta />
       </main>

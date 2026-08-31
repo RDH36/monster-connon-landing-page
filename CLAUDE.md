@@ -1,6 +1,6 @@
 # Monster Cannon — Landing Page
 
-Landing page de **pré-lancement** pour le jeu mobile *Monster Cannon* (arcade roguelike hypercasual cozy cartoon, Android/Google Play, F2P sans pub forcée). Objectif unique de la page : **capture d'email + pré-inscription**.
+Landing page du jeu mobile *Monster Cannon* (arcade roguelike hypercasual cozy cartoon, Android/Google Play, F2P sans pub forcée ni achat intégré). Le jeu est **publié** : l'objectif unique de la page est le **clic vers la fiche Google Play**. Pas de formulaire, pas de capture d'email.
 
 ## Stack
 
@@ -9,7 +9,6 @@ Landing page de **pré-lancement** pour le jeu mobile *Monster Cannon* (arcade r
 - **shadcn/ui** (style new-york) — `src/components/ui/`
 - **next-themes** — mono-thème **twilight** (forcé via `forcedTheme="dark"`)
 - **next-intl** — i18n **FR/EN** (routing `[locale]`, FR par défaut sans préfixe, EN sur `/en`)
-- **sonner** — toasts (feedback formulaire)
 - **lucide-react** — icônes
 
 > Pas de TanStack Query (landing statique). Pas de theme toggle : le design system est mono-thème.
@@ -53,16 +52,24 @@ app/
   globals.css       # design system complet (palette, polices, @utility)
   confidentialite-jeu/  # Confidentialité DU JEU (RGPD + Google Play) — pour la fiche store
   conditions-jeu/       # Conditions d'utilisation DU JEU (CLUF/EULA)
-  confidentialite/      # Confidentialité du site (liste d'attente email)
-  conditions/           # Conditions du site (pré-inscription)
+  confidentialite/      # Confidentialité du site (aucune donnée collectée)
+  conditions/           # Conditions du site
 src/
   components/ui/    # composants shadcn (accordion, sonner, + button/card/input/badge)
   lib/utils.ts      # helper cn()
-  features/landing/ # navbar, hero, problem, solution, features, free-comparison,
-                    # social-proof, faq, final-cta, footer, waitlist-form
+  features/landing/
+    assets.ts       # PLAY_URL + helpers de chemins vers public/game
+    shell/          # navbar, footer, play-badge (badge officiel + bouton navbar)
+    showcase/       # hero, trailer, phone-frame, screenshots
+    pitch/          # solution, features, faq, final-cta
   features/legal/   # legal-layout.tsx (+ CONTACT_EMAIL = raymond.dzeryhago36@gmail.com)
+public/
+  game/             # trailer_720.mp4, poster.jpg, 7 captures × FR/EN (copiés du dépôt du jeu)
+  badges/           # badge officiel Google Play (FR/EN), à servir sans modification
+  og.jpg            # image Open Graph / Twitter
 docs/
   LANDING_PAGE.md   # spec copywriting (source de vérité du contenu)
+  Landing_Page_Update.md  # brief de mise à jour v1.1.1 (source des faits affichés)
 ```
 
 Alias d'import : `@/*` → `./src/*`, `@/app/*` → `./app/*`.
@@ -76,13 +83,11 @@ Alias d'import : `@/*` → `./src/*`, `@/app/*` → `./app/*`.
 
 ## À faire (TODO produit)
 
-- **Capture d'email** : `src/features/landing/waitlist-form.tsx` contient un handler **factice** (`TODO` dans le fichier). Brancher un service réel (route API Next.js + Resend, ou Mailchimp).
-- **Assets** : remplacer le mock HUD du hero (`hero.tsx` → `HeroVisual`) par un vrai trailer/GIF/screenshots, idéalement les sprites du jeu (`docs/` contient les atlas Guns/Monster).
-- **Lien Google Play** : ajouter l'URL de pré-inscription réelle quand la fiche store existe.
-- **i18n EN** : le jeu est FR/EN — prévoir une version anglaise (variantes de hero dans `docs/LANDING_PAGE.md`).
+- **Chiffres à mesurer** : « 60 FPS » et le poids de téléchargement ne sont pas mesurés ; la page dit seulement « fluide, pensé pour 60 FPS » et n'annonce aucun poids. À relever dans la Play Console avant de les afficher.
+- **Play Console** : le formulaire « Sécurité des données » doit déclarer PostHog (identifiants d'appareil + données d'utilisation, collectées, non partagées, chiffrées en transit) — sinon l'envoi est rejeté.
 
 ## Conventions
 
 - Tout en **français** (UI + copy). Tutoiement, ton fun/arcade.
 - Max 250 lignes par fichier, max 7 fichiers par dossier (règles globales Raymond).
-- Jamais de faux avis/compteurs tant que le jeu n'est pas sorti (honnêteté pré-lancement).
+- Jamais de faux avis ni de compteurs inventés. Tout chiffre affiché doit être vérifiable dans le jeu (voir `docs/Landing_Page_Update.md`).

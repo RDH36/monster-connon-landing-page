@@ -5,9 +5,9 @@ export default function PrivacySiteFr() {
     <>
       <p>
         La présente politique explique comment nous traitons tes données
-        personnelles lorsque tu utilises le site de pré-inscription de{" "}
-        <strong>Monster Cannon</strong> (« le Site ») et, à terme, le jeu mobile
-        Monster Cannon (« le Jeu »). Nous attachons une grande importance à la
+        personnelles lorsque tu utilises le site de{" "}
+        <strong>Monster Cannon</strong> (« le Site ») et le jeu mobile Monster
+        Cannon (« le Jeu »). Nous attachons une grande importance à la
         protection de ta vie privée et nous conformons au Règlement Général sur la
         Protection des Données (RGPD).
       </p>
@@ -21,28 +21,28 @@ export default function PrivacySiteFr() {
       </p>
 
       <h2>2. Données que nous collectons</h2>
-      <h3>Sur le site de pré-inscription</h3>
+      <h3>Sur le Site</h3>
+      <p>
+        Le Site est une page de présentation : il ne contient{" "}
+        <strong>aucun formulaire</strong> et ne te demande{" "}
+        <strong>aucune donnée personnelle</strong> — ni adresse e-mail, ni compte,
+        ni inscription.
+      </p>
       <ul>
-        <li>
-          <strong>Adresse e-mail</strong> : que tu nous communiques volontairement
-          pour rejoindre la liste d&apos;attente et être prévenu du lancement.
-        </li>
-        <li>
-          <strong>Préférence bêta</strong> : indication facultative que tu
-          souhaites participer au test bêta.
-        </li>
         <li>
           <strong>Données techniques</strong> : données strictement nécessaires au
           fonctionnement du site (adresse IP, type de navigateur), traitées de
           façon anonyme à des fins de sécurité et de mesure d&apos;audience.
         </li>
       </ul>
-      <h3>Dans le jeu (à venir)</h3>
+      <h3>Dans le jeu</h3>
       <ul>
         <li>
-          <strong>Progression de jeu</strong> : ton record, tes pièces et tes
-          skins sont enregistrés <strong>localement sur ton appareil</strong>{" "}
-          (aucun compte requis, aucune donnée envoyée à nos serveurs).
+          <strong>Progression de jeu</strong> : ton record, ton or et tes canons
+          sont enregistrés <strong>localement sur ton appareil</strong> (aucun
+          compte requis). Le détail des données envoyées par le jeu —
+          statistiques d&apos;usage anonymes et classement mondial — figure sur la
+          page « Confidentialité du jeu ».
         </li>
         <li>
           <strong>Publicités récompensées</strong> : le Jeu utilise une régie
@@ -56,10 +56,6 @@ export default function PrivacySiteFr() {
       <h2>3. Finalités et bases légales</h2>
       <ul>
         <li>
-          Te tenir informé du lancement et de l&apos;accès bêta —{" "}
-          <strong>base légale : ton consentement</strong>.
-        </li>
-        <li>
           Assurer le bon fonctionnement et la sécurité du Site —{" "}
           <strong>base légale : notre intérêt légitime</strong>.
         </li>
@@ -71,18 +67,17 @@ export default function PrivacySiteFr() {
 
       <h2>4. Durée de conservation</h2>
       <p>
-        Ton adresse e-mail est conservée jusqu&apos;au lancement du Jeu et pendant
-        une période raisonnable après, ou jusqu&apos;à ce que tu demandes ta
-        désinscription. Tu peux te désinscrire à tout moment via le lien présent
-        dans chacun de nos e-mails.
+        Les journaux techniques de l&apos;hébergeur du Site sont conservés le temps
+        nécessaire à la sécurité et à la mesure d&apos;audience, puis supprimés.
+        Aucune donnée personnelle n&apos;est stockée par le Site.
       </p>
 
       <h2>5. Partage de tes données</h2>
       <p>
-        Nous ne vendons jamais tes données. Nous les partageons uniquement avec nos
-        prestataires techniques (hébergement, service d&apos;envoi d&apos;e-mails)
-        agissant pour notre compte, ainsi qu&apos;avec les régies publicitaires
-        dans le cadre du Jeu. Ces prestataires sont tenus de protéger tes données.
+        Nous ne vendons jamais tes données. Le Site ne les partage qu&apos;avec son
+        hébergeur, agissant pour notre compte. Les données traitées dans le cadre
+        du Jeu (statistiques anonymes, régies publicitaires) sont décrites sur la
+        page « Confidentialité du jeu ».
       </p>
 
       <h2>6. Tes droits</h2>
@@ -104,9 +99,9 @@ export default function PrivacySiteFr() {
 
       <h2>8. Mineurs</h2>
       <p>
-        Le Site n&apos;est pas destiné aux enfants de moins de 13 ans. Si tu es
-        mineur, demande l&apos;accord de tes parents avant de transmettre ton
-        adresse e-mail.
+        Le Site n&apos;est pas destiné aux enfants de moins de 13 ans. Il ne
+        collecte aucune donnée les concernant, puisqu&apos;il n&apos;en collecte
+        aucune.
       </p>
 
       <h2>9. Modifications</h2>
