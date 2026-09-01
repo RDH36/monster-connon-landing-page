@@ -27,8 +27,8 @@ export function Trailer() {
   }
 
   return (
-    <div className="mx-auto flex w-full max-w-[300px] flex-col items-center gap-3">
-      <PhoneFrame>
+    <div className="mx-auto flex w-full max-w-[300px] flex-col items-center gap-3 lg:-translate-y-6">
+      <PhoneFrame className="lg:rotate-[4deg]">
         <video
           ref={videoRef}
           src={TRAILER_SRC}
