@@ -1,6 +1,6 @@
 /** Constantes et helpers d'URL partagés par les metadata, le sitemap et le robots. */
 
-export const SITE_URL = "https://monster-cannon.dzeryhago.com";
+export const SITE_URL = "https://monstercannon.dzeryhago.com";
 
 export const LOCALES = ["fr", "en"] as const;
 

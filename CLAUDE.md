@@ -98,7 +98,7 @@ Alias d'import : `@/*` → `./src/*`, `@/app/*` → `./app/*`.
 - Données structurées dans `src/features/landing/structured-data.tsx` : `VideoGame` (lie la page à
   la fiche Play) + `FAQPage` (résultats enrichis). **Jamais de note ni de compteur d'installations**
   tant qu'ils ne sont pas sourcés dans la Play Console.
-- `SITE_URL` = `https://monster-cannon.dzeryhago.com` (sous-domaine du portfolio de Raymond).
+- `SITE_URL` = `https://monstercannon.dzeryhago.com` (sous-domaine du portfolio de Raymond).
 
 ## Scripts
 
