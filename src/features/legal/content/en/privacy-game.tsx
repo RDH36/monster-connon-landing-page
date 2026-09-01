@@ -12,7 +12,7 @@ export default function PrivacyGameEn() {
 
       <h2>1. Data controller</h2>
       <p>
-        The Game is published by <strong>RDH</strong>, an independent developer.
+        The Game is published by <strong>Raymond Dzery Hago</strong>, an independent developer.
         Contact: <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
       </p>
 

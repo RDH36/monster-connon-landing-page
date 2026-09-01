@@ -13,7 +13,7 @@ export default function PrivacySiteEn() {
 
       <h2>1. Data controller</h2>
       <p>
-        The data controller is <strong>RDH</strong>, independent developer of
+        The data controller is <strong>Raymond Dzery Hago</strong>, independent developer of
         Monster Cannon. For any question about your data, you can contact us at:{" "}
         <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
       </p>

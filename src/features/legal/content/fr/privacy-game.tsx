@@ -12,7 +12,7 @@ export default function PrivacyGameFr() {
 
       <h2>1. Responsable du traitement</h2>
       <p>
-        Le Jeu est édité par <strong>RDH</strong>, développeur indépendant.
+        Le Jeu est édité par <strong>Raymond Dzery Hago</strong>, développeur indépendant.
         Contact : <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.
       </p>
 

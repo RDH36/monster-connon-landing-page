@@ -110,7 +110,7 @@ export default function TermsGameFr() {
       <p>
         Le Jeu, son nom « Monster Cannon », ses graphismes, personnages, musiques,
         textes, code et tous ses éléments sont protégés et demeurent la propriété
-        exclusive de leur auteur (RDH). Aucune cession de droits ne t&apos;est
+        exclusive de leur auteur (Raymond Dzery Hago). Aucune cession de droits ne t&apos;est
         accordée au-delà de la licence d&apos;utilisation ci-dessus.
       </p>
 

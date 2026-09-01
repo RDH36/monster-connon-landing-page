@@ -43,7 +43,7 @@ export default function TermsSiteEn() {
       <p>
         The name &quot;Monster Cannon&quot;, the logos, graphics, characters, text
         and all elements of the Site and the Game are protected and remain the
-        exclusive property of their author (RDH). Any unauthorized reproduction or
+        exclusive property of their author (Raymond Dzery Hago). Any unauthorized reproduction or
         use is prohibited.
       </p>
 

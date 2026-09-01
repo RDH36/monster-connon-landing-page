@@ -1,6 +1,7 @@
 import { useLocale, useTranslations } from "next-intl";
+import Image from "next/image";
 
-import { PLAY_URL } from "@/features/landing/assets";
+import { LOGO_SRC, PLAY_URL } from "@/features/landing/assets";
 import { Link } from "@/i18n/navigation";
 
 export function Footer() {
@@ -14,7 +15,13 @@ export function Footer() {
     <footer className="border-t border-border/60 py-10">
       <div className="mx-auto flex max-w-6xl flex-col items-center justify-between gap-4 px-4 sm:flex-row">
         <div className="flex items-center gap-2 font-bold">
-          <span>💥</span>
+          <Image
+            src={LOGO_SRC}
+            alt=""
+            width={30}
+            height={23}
+            className="h-7 w-auto"
+          />
           <span>
             Monster<span className="text-accent"> Cannon</span>
           </span>

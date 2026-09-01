@@ -98,7 +98,7 @@ export default function TermsGameEn() {
       <p>
         The Game, its name &quot;Monster Cannon&quot;, its graphics, characters,
         music, text, code and all its elements are protected and remain the
-        exclusive property of their author (RDH). No rights are granted to you
+        exclusive property of their author (Raymond Dzery Hago). No rights are granted to you
         beyond the license above.
       </p>
 

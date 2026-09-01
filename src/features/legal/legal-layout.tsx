@@ -1,6 +1,8 @@
 import { ArrowLeft } from "lucide-react";
 import { useTranslations } from "next-intl";
+import Image from "next/image";
 
+import { LOGO_SRC } from "@/features/landing/assets";
 import { Link } from "@/i18n/navigation";
 import { Footer } from "@/features/landing/shell/footer";
 
@@ -22,7 +24,14 @@ export function LegalLayout({
       <header className="sticky top-0 z-50 border-b-[3px] border-ink/60 bg-background/85 backdrop-blur-md">
         <nav className="mx-auto flex h-16 max-w-3xl items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2 text-lg">
-            <span className="text-2xl">💥</span>
+            <Image
+              src={LOGO_SRC}
+              alt=""
+              width={40}
+              height={31}
+              priority
+              className="h-10 w-auto"
+            />
             <span className="font-display tracking-wide">
               MONSTER<span className="text-accent"> CANNON</span>
             </span>

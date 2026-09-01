@@ -48,7 +48,7 @@ export default function TermsSiteFr() {
       <p>
         Le nom « Monster Cannon », les logos, graphismes, personnages, textes et
         l&apos;ensemble des éléments du Site et du Jeu sont protégés et demeurent la
-        propriété exclusive de leur auteur (RDH). Toute reproduction ou utilisation
+        propriété exclusive de leur auteur (Raymond Dzery Hago). Toute reproduction ou utilisation
         non autorisée est interdite.
       </p>
 

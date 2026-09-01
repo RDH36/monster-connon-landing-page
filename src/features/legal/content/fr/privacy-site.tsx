@@ -14,7 +14,7 @@ export default function PrivacySiteFr() {
 
       <h2>1. Responsable du traitement</h2>
       <p>
-        Le responsable du traitement est <strong>RDH</strong>, développeur
+        Le responsable du traitement est <strong>Raymond Dzery Hago</strong>, développeur
         indépendant de Monster Cannon. Pour toute question relative à tes données,
         tu peux nous contacter à l&apos;adresse :{" "}
         <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>.

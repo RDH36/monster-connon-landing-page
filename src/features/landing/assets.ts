@@ -24,6 +24,9 @@ export function shotSrc(key: string, locale: string) {
   return `/game/${key}_${shotLocale(locale)}.jpg`;
 }
 
+/** Sprite du Blob King, le boss de la vague 10 — sert de logo au site. */
+export const LOGO_SRC = "/blob-king.png";
+
 /** Badge officiel Google Play, décliné par langue. */
 export function playBadgeSrc(locale: string) {
   return `/badges/google-play-${shotLocale(locale)}.png`;

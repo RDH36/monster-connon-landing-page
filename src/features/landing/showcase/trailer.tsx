@@ -39,7 +39,7 @@ export function Trailer() {
           loop
           playsInline
           preload="metadata"
-          className="size-full object-cover"
+          className="size-full object-contain"
         />
 
         <button
