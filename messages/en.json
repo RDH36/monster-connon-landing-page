@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Monster Cannon — Aim. Bounce. Destroy everything.",
-    "description": "Roguelike arcade: ricochet your ball, survive endless waves, take on 5 bosses and unlock 21 cannons. Zero forced ads, no in-app purchases. Out now on Google Play.",
-    "ogDescription": "Endless waves, 5 bosses, 21 cannons to unlock. Free, with no forced ads and no in-app purchases."
+    "description": "Bounce-physics arcade shooter: aim the cannon, ricochet your ball off the walls and smash straight through the monster horde. Endless waves, 5 bosses, 21 cannons. Plays offline, free, no in-app purchases.",
+    "ogDescription": "Smart angles beat brute force. Endless waves, 5 bosses, satisfying bounce physics. Free and fully playable offline."
   },
   "nav": {
     "game": "The game",
@@ -17,10 +17,11 @@
     "badge": "🎮 OUT NOW ON GOOGLE PLAY",
     "titleLine1": "AIM. BOUNCE.",
     "titleLine2": "DESTROY EVERYTHING.",
-    "subtitle": "Launch your ball, ricochet it off the walls, pierce through hordes of monsters and survive <hl>endless waves</hl>. Upgrade your cannon run after run.",
+    "subtitle": "Load the cannon, take aim, and <hl>let the bounce do the rest</hl>. Smart angles beat brute force.",
     "tags": [
-      "ROGUELIKE",
-      "ZERO FORCED ADS",
+      "BOUNCE ARCADE",
+      "ENDLESS WAVES",
+      "PLAYS OFFLINE",
       "NO IN-APP PURCHASES"
     ]
   },
@@ -31,28 +32,28 @@
     "caption": "34 seconds of the real game, no flattering cuts."
   },
   "solution": {
-    "heading": "One cannon. Endless bounces. Zero mercy. 💥",
-    "valueProp": "The pure satisfaction of a ball that ricochets perfectly — like a clean pool shot — with the depth of a real roguelike. You progress through skill and through gold you earned playing, never through your credit card.",
+    "heading": "Smart angles beat brute force. 💥",
+    "valueProp": "Touch and drag to aim: a trajectory line shows exactly where the ball will bounce. Release, watch the ricochet, and chain a combo of kills with one perfect shot. One finger, no tutorial, runs last minutes, not hours.",
     "benefits": [
       {
         "icon": "🎯",
-        "title": "A deeply satisfying core move",
-        "body": "Aim, fire, watch your ball bounce off the walls and pierce through monsters. The cannon has a reload timer: every shot counts, and a good angle clears half the screen."
+        "title": "Aim, release, watch the ricochet",
+        "body": "The trajectory line shows where the ball will bounce before you even fire. Bank off the walls, hit what hides behind an obstacle: skill is seeing the angle others can't."
       },
       {
         "icon": "♾️",
-        "title": "Endless waves, in real time",
-        "body": "Monsters advance on their own and the difficulty never stops climbing. The further you go, the tenser it gets — your high score is never safe."
+        "title": "Endless monster waves",
+        "body": "There is no final level. Only how far you can go. Monsters advance on their own and the difficulty never stops climbing."
       },
       {
         "icon": "⚔️",
-        "title": "One boost to pick at the end of every wave",
-        "body": "Sturdy Ball (pierces +1 enemy), Ball Reserve (+1 ball), Heavy Ball (+1 damage), Fast Cannon (−0.5 s reload). Four boosts, never the same run twice."
+        "title": "One boost between every wave",
+        "body": "Sturdy Ball (pierces +1 enemy), Ball Reserve (+1 ball), Heavy Ball (+1 damage), Fast Cannon (−0.5 s reload). Stack the effects into a build that never repeats."
       },
       {
         "icon": "🧪",
-        "title": "A lab that keeps your progress",
-        "body": "Four permanent upgrades paid in gold: three go up to level 8, the cannon's HP up to level 3. The cost grows quadratically — every level takes several runs to earn."
+        "title": "What you earn stays yours",
+        "body": "Four permanent upgrades paid in gold: three go up to level 8, the cannon's HP up to level 3. The cannons you unlock stay with you forever."
       }
     ]
   },
@@ -103,8 +104,14 @@
       {
         "emoji": "👹",
         "tag": "Five bosses",
-        "headline": "Five bosses, five ways to die.",
-        "body": "Blob King, Speedy, Guardian, Splitter and Overlord wait for you at waves 10, 20, 30, 40 and 50. Each one breaks a habit you just picked up."
+        "headline": "Beat a boss, its mechanic stays.",
+        "body": "Blob King, Speedy, Guardian, Splitter and Overlord wait for you at waves 10, 20, 30, 40 and 50. Each brings a new mechanic — obstacles, shields, splitting monsters — and once beaten, it joins the regular waves for good."
+      },
+      {
+        "emoji": "📐",
+        "tag": "Trajectory line",
+        "headline": "The more you think, the more damage you deal.",
+        "body": "Before every shot, the line shows exactly where the ball will bounce. One perfect shot can clear half the screen and chain a combo."
       },
       {
         "emoji": "🧪",
@@ -140,6 +147,10 @@
         "a": "A roguelike arcade game: you control a cannon and fire balls that ricochet off the walls and pierce through monsters. Combat is real time, waves are endless, and you pick a boost at the end of every wave."
       },
       {
+        "q": "How do you play?",
+        "a": "Touch and drag to aim: a trajectory line shows where the ball will bounce. Release to fire. One finger, no tutorial to sit through, and a run lasts minutes, not hours."
+      },
+      {
         "q": "Is it really free?",
         "a": "Yes. No in-app purchases, no interstitial ads. The only ads are two buttons you trigger yourself: revive after death (5 times a day max) and double a run's gold (2 times a day max). The whole economy runs on gold you earn by playing."
       },
@@ -157,7 +168,7 @@
       },
       {
         "q": "Do I need an internet connection to play?",
-        "a": "No, the game plays offline. A connection is only used for the optional rewarded ads and the global leaderboard."
+        "a": "No, the game plays fully offline, no wifi needed. A connection is only used for the optional rewarded ads and the global leaderboard."
       },
       {
         "q": "Is the game available in my language?",
@@ -171,10 +182,10 @@
   },
   "finalCta": {
     "heading": "Your cannon is waiting. <hl>Go set your record.</hl>",
-    "supporting": "Free, no in-app purchases, no forced ads. The only thing you're risking is getting hooked.",
+    "supporting": "Aim well. Bounce smart. Smash them all. Free, plays offline, no in-app purchases.",
     "trust": [
-      "✅ Built with Unity — smooth, designed for 60 FPS",
-      "✅ Playable offline",
+      "✅ One finger, no tutorial",
+      "✅ Plays fully offline",
       "✅ Free, with no in-app purchases"
     ]
   },

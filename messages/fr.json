@@ -1,8 +1,8 @@
 {
   "meta": {
     "title": "Monster Cannon — Vise. Rebondis. Détruis tout.",
-    "description": "Arcade roguelike : fais ricocher ton boulet, survis à des vagues infinies, affronte 5 boss et débloque 21 canons. Zéro pub forcée, aucun achat intégré. Disponible sur Google Play.",
-    "ogDescription": "Vagues infinies, 5 boss, 21 canons à débloquer. Gratuit, sans pub imposée ni achat intégré."
+    "description": "Jeu de tir arcade à rebonds : vise le canon, fais ricocher ton boulet sur les murs et transperce la horde de monstres. Vagues infinies, 5 boss, 21 canons. Jouable hors ligne, gratuit, sans achat intégré.",
+    "ogDescription": "Un bon angle vaut mieux que la force brute. Vagues infinies, 5 boss, physique de rebond satisfaisante. Gratuit et jouable entièrement hors ligne."
   },
   "nav": {
     "game": "Le jeu",
@@ -17,11 +17,12 @@
     "badge": "🎮 DISPONIBLE SUR GOOGLE PLAY",
     "titleLine1": "VISE. REBONDIS.",
     "titleLine2": "DÉTRUIS TOUT.",
-    "subtitle": "Lance ton boulet, fais-le ricocher sur les murs, traverse des hordes de monstres et survis à des <hl>vagues infinies</hl>. Améliore ton canon partie après partie.",
+    "subtitle": "Charge le canon, ajuste ton angle, et <hl>laisse le rebond faire le reste</hl>. Un bon angle vaut mieux que la force brute.",
     "tags": [
-      "ROGUELIKE",
-      "ZÉRO PUB FORCÉE",
-      "AUCUN ACHAT INTÉGRÉ"
+      "ARCADE À REBONDS",
+      "VAGUES INFINIES",
+      "HORS LIGNE",
+      "SANS ACHAT INTÉGRÉ"
     ]
   },
   "trailer": {
@@ -31,28 +32,28 @@
     "caption": "34 secondes de jeu, sans montage flatteur."
   },
   "solution": {
-    "heading": "Un canon. Des rebonds. Zéro pitié. 💥",
-    "valueProp": "La satisfaction pure d'un tir qui ricoche parfaitement — comme un coup de billard réussi — avec la profondeur d'un vrai roguelike. Tu progresses à la skill et à l'or gagné en jouant, jamais à la carte bleue.",
+    "heading": "Un bon angle vaut mieux que la force brute. 💥",
+    "valueProp": "Touche et glisse pour viser : une ligne de trajectoire te montre exactement où ton boulet va rebondir. Relâche, regarde le ricochet, et enchaîne les éliminations d'un seul tir bien placé. Un doigt, aucun tutoriel, quelques minutes par partie.",
     "benefits": [
       {
         "icon": "🎯",
-        "title": "Un geste de jeu ultra-satisfaisant",
-        "body": "Vise, tire, regarde ton boulet ricocher sur les murs et traverser les monstres. Le canon a un temps de recharge : chaque tir compte, et un bon angle nettoie la moitié de l'écran."
+        "title": "Vise, relâche, regarde le ricochet",
+        "body": "La ligne de trajectoire montre où le boulet va rebondir avant même que tu tires. Banque sur les murs, vise ce qui se cache derrière un obstacle : le skill, c'est voir l'angle que les autres ne voient pas."
       },
       {
         "icon": "♾️",
-        "title": "Des vagues infinies, en temps réel",
-        "body": "Les monstres avancent tout seuls, la difficulté ne s'arrête jamais. Plus tu vas loin, plus c'est nerveux — ton record n'est jamais à l'abri."
+        "title": "Des vagues de monstres sans fin",
+        "body": "Il n'y a pas de dernier niveau. Seulement la distance que tu arrives à parcourir. Les monstres avancent tout seuls et la difficulté ne s'arrête jamais de monter."
       },
       {
         "icon": "⚔️",
-        "title": "Un boost à choisir à chaque fin de vague",
-        "body": "Boulet Robuste (traverse +1 ennemi), Réserve de Boulets (+1 boulet), Boulet Lourd (+1 dégât), Canon Rapide (recharge −0,5 s). Quatre boosts, jamais la même partie."
+        "title": "Un boost entre chaque vague",
+        "body": "Boulet Robuste (traverse +1 ennemi), Réserve de Boulets (+1 boulet), Boulet Lourd (+1 dégât), Canon Rapide (recharge −0,5 s). Tu combines les effets pour un build qui ne se répète jamais."
       },
       {
         "icon": "🧪",
-        "title": "Un laboratoire qui garde tes progrès",
-        "body": "Quatre améliorations permanentes payées en or : trois montent jusqu'au niveau 8, les PV du canon jusqu'au niveau 3. Le coût grimpe au carré — chaque niveau se mérite sur plusieurs parties."
+        "title": "Ce que tu gagnes reste acquis",
+        "body": "Quatre améliorations permanentes payées en or : trois montent jusqu'au niveau 8, les PV du canon jusqu'au niveau 3. Tes canons débloqués, eux, sont à toi pour toujours."
       }
     ]
   },
@@ -103,8 +104,14 @@
       {
         "emoji": "👹",
         "tag": "Cinq boss",
-        "headline": "Cinq boss, cinq façons de mourir.",
-        "body": "Blob King, Speedy, Guardian, Splitter et Overlord t'attendent aux vagues 10, 20, 30, 40 et 50. Chacun casse une habitude que tu viens juste de prendre."
+        "headline": "Bats un boss, sa mécanique reste.",
+        "body": "Blob King, Speedy, Guardian, Splitter et Overlord t'attendent aux vagues 10, 20, 30, 40 et 50. Chacun apporte une nouvelle mécanique — obstacles, boucliers, monstres qui se divisent — et une fois battu, elle rejoint définitivement les vagues normales."
+      },
+      {
+        "emoji": "📐",
+        "tag": "Ligne de trajectoire",
+        "headline": "Plus tu réfléchis, plus tu fais de dégâts.",
+        "body": "Avant chaque tir, la ligne te montre exactement où le boulet va rebondir. Un seul tir bien placé peut nettoyer la moitié de l'écran et enchaîner un combo."
       },
       {
         "emoji": "🧪",
@@ -140,6 +147,10 @@
         "a": "Un jeu d'arcade roguelike : tu contrôles un canon, tu tires des boulets qui ricochent sur les murs et traversent les monstres. Le combat est en temps réel, les vagues sont infinies, et tu choisis un boost à la fin de chaque vague."
       },
       {
+        "q": "Comment on joue ?",
+        "a": "Tu touches l'écran et tu glisses pour viser : une ligne de trajectoire te montre où le boulet va rebondir. Tu relâches, ça tire. Un seul doigt, aucun tutoriel à subir, et une partie dure quelques minutes."
+      },
+      {
         "q": "C'est vraiment gratuit ?",
         "a": "Oui. Aucun achat intégré, aucune pub interstitielle. Les seules pubs sont deux boutons que tu déclenches toi-même : revivre après la mort (5 fois par jour maximum) et doubler l'or d'une partie (2 fois par jour maximum). Toute l'économie du jeu tourne à l'or gagné en jouant."
       },
@@ -157,7 +168,7 @@
       },
       {
         "q": "Il faut une connexion internet pour jouer ?",
-        "a": "Non, le jeu se joue hors ligne. Une connexion sert uniquement aux pubs à récompense optionnelles et au classement mondial."
+        "a": "Non, le jeu est jouable entièrement hors ligne, sans wifi. Une connexion sert uniquement aux pubs à récompense optionnelles et au classement mondial."
       },
       {
         "q": "Le jeu est-il en français ?",
@@ -171,10 +182,10 @@
   },
   "finalCta": {
     "heading": "Ton canon t'attend. <hl>Va décrocher ton record.</hl>",
-    "supporting": "Gratuit, sans achat intégré, sans pub imposée. La seule chose que tu risques, c'est de devenir accro.",
+    "supporting": "Vise juste. Rebondis malin. Écrase-les tous. Gratuit, jouable hors ligne, sans achat intégré.",
     "trust": [
-      "✅ Développé sous Unity — fluide, pensé pour 60 FPS",
-      "✅ Jouable hors ligne",
+      "✅ Un seul doigt, aucun tutoriel",
+      "✅ Jouable entièrement hors ligne",
       "✅ Gratuit, sans achat intégré"
     ]
   },
