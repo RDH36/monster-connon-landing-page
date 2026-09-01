@@ -6,7 +6,7 @@ import { LOGO_SRC } from "@/features/landing/assets";
 import { Link } from "@/i18n/navigation";
 import { Footer } from "@/features/landing/shell/footer";
 
-export const CONTACT_EMAIL = "raymond.dzeryhago36@gmail.com";
+export const CONTACT_EMAIL = "contact@dzeryhago.com";
 
 export function LegalLayout({
   title,
@@ -21,7 +21,7 @@ export function LegalLayout({
 
   return (
     <>
-      <header className="sticky top-0 z-50 border-b-[3px] border-ink/60 bg-background/85 backdrop-blur-md">
+      <header className="sticky top-0 z-50 bg-background/85 backdrop-blur-md">
         <nav className="mx-auto flex h-16 max-w-3xl items-center justify-between px-4">
           <Link href="/" className="flex items-center gap-2 text-lg">
             <Image
@@ -46,12 +46,12 @@ export function LegalLayout({
         </nav>
       </header>
 
-      <main className="bg-twilight flex-1">
+      <main className="bg-paper-dots flex-1">
         <div className="mx-auto max-w-3xl px-4 py-16">
           <h1 className="title-stroke font-display text-4xl sm:text-5xl">
             {title}
           </h1>
-          <p className="mt-4 text-sm font-bold text-dim-purple">
+          <p className="mt-4 text-sm font-bold text-dim-ink">
             {t("updatedLabel")} : {updatedAt}
           </p>
           <article className="legal-prose mt-10">{children}</article>

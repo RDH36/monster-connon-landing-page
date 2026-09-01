@@ -14,7 +14,7 @@ export function Faq() {
   const items = t.raw("items") as QA[];
 
   return (
-    <section id="faq" className="border-b border-border/60 py-20">
+    <section id="faq" className="py-20">
       <div className="mx-auto max-w-3xl px-4">
         <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">
           {t("heading")}
@@ -23,10 +23,10 @@ export function Faq() {
         <Accordion type="single" collapsible className="mt-10">
           {items.map((item, i) => (
             <AccordionItem key={item.q} value={`item-${i}`}>
-              <AccordionTrigger className="text-left text-base font-semibold">
+              <AccordionTrigger className="text-left text-[17px] font-black text-foreground">
                 {item.q}
               </AccordionTrigger>
-              <AccordionContent className="text-muted-foreground">
+              <AccordionContent className="text-[15px] leading-relaxed text-muted-foreground">
                 {item.a}
               </AccordionContent>
             </AccordionItem>

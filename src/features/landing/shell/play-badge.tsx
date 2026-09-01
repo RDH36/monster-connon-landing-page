@@ -52,7 +52,7 @@ export function PlayButton({ className }: { className?: string }) {
       target="_blank"
       rel="noopener noreferrer"
       className={cn(
-        "btn-game btn-game-gold btn-game-active !px-5 !py-2.5 !text-[15px]",
+        "btn-game btn-game-gold btn-game-sm btn-game-active",
         className,
       )}
     >

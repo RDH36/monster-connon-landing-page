@@ -3,63 +3,64 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
-  Monster Cannon — Design System v1.0 (cozy cartoon / twilight).
+  Monster Cannon — Design System v2.0 (cozy cartoon / papier + terrain).
   Palette, polices et recettes 3D repris du design system officiel (RDH36).
 */
 
 :root {
   --radius: 18px;
 
-  /* Ink / outline */
-  --ink: #2b1638;
-  --ink-soft: #5a3b7a;
+  /* Ink / outline — brun encre, plus aucun violet */
+  --ink: #2a2118;
+  --ink-soft: #54452f;
   --paper: #fffaeb;
 
-  /* Brand */
-  --primary-hex: #7a3fc8;
-  --primary-dark: #4a2390;
-  --primary-light: #c39cf0;
+  /* Brand — le vert du terrain de jeu */
+  --primary-hex: #1e4526;
+  --primary-dark: #12290f;
+  --primary-light: #b7cdbb;
 
   /* Accent / or */
   --gold: #ffd64a;
   --gold-mid: #e89a1f;
   --accent-hex: #ffb627;
   --accent-dark: #c25e07;
-  --label-gold: #ffe9a8;
+  /* Version lisible de l'or sur fond papier */
+  --label-gold: #8a4a0a;
 
   /* Fonctionnel */
-  --hp: #62d547;
-  --hp-dark: #1f7a14;
+  --hp: #4fa82f;
+  --hp-dark: #2c6b1a;
   --boss: #ff3d81;
   --boss-dark: #b6175a;
-  --gem: #2ee0cf;
-  --danger: #ff5a3f;
-  --danger-dark: #c13016;
+  --gem: #17a89b;
+  --danger: #d93b1f;
+  --danger-dark: #a02a10;
 
   /* Texte secondaire */
-  --muted-purple: #c8a8f0;
-  --dim-purple: #8b6fac;
+  --muted-ink: #4a3d2c;
+  --dim-ink: #6e5c44;
 
-  /* === Tokens shadcn mappés sur la palette twilight === */
-  --background: #1a0e2e;
-  --foreground: #fffaeb;
-  --card: #2b1638;
-  --card-foreground: #fffaeb;
-  --popover: #2b1638;
-  --popover-foreground: #fffaeb;
-  --primary: #7a3fc8;
-  --primary-foreground: #ffffff;
-  --secondary: #3a2350;
-  --secondary-foreground: #fffaeb;
-  --muted: #2b1638;
-  --muted-foreground: #c8a8f0;
-  --accent: #ffb627;
-  --accent-foreground: #2b1638;
-  --destructive: #ff5a3f;
+  /* === Tokens shadcn mappés sur la palette papier === */
+  --background: #f3e2bd;
+  --foreground: #2a2118;
+  --card: #fffaeb;
+  --card-foreground: #2a2118;
+  --popover: #fffaeb;
+  --popover-foreground: #2a2118;
+  --primary: #1e4526;
+  --primary-foreground: #fffaeb;
+  --secondary: #ffe9b0;
+  --secondary-foreground: #2a2118;
+  --muted: #ffe9b0;
+  --muted-foreground: #4a3d2c;
+  --accent: #c25e07;
+  --accent-foreground: #fffaeb;
+  --destructive: #d93b1f;
   --destructive-foreground: #ffffff;
-  --border: #5a3b7a;
-  --input: #5a3b7a;
-  --ring: #ffb627;
+  --border: #2a2118;
+  --input: #2a2118;
+  --ring: #c25e07;
 }
 
 @theme inline {
@@ -93,7 +94,7 @@
   --color-gem: var(--gem);
   --color-primary-light: var(--primary-light);
   --color-label-gold: var(--label-gold);
-  --color-dim-purple: var(--dim-purple);
+  --color-dim-ink: var(--dim-ink);
 
   --radius-sm: 10px;
   --radius-md: 18px;
@@ -112,15 +113,22 @@
     background-color: var(--background);
     color: var(--foreground);
     font-family: var(--font-body), system-ui, sans-serif;
-    font-weight: 800;
+    font-weight: 700;
   }
+  /* Lilita One est une fonte d'affiche : réservée aux gros titres. */
   h1,
-  h2,
-  h3,
-  h4 {
+  h2 {
     font-family: var(--font-display), system-ui, sans-serif;
     font-weight: 400;
     letter-spacing: 0.5px;
+  }
+  /* Les titres de cartes et les questions de FAQ se lisent en petit :
+     ils restent sur la fonte de corps, en gras. */
+  h3,
+  h4 {
+    font-family: var(--font-body), system-ui, sans-serif;
+    font-weight: 900;
+    letter-spacing: 0;
   }
 }
 
@@ -128,24 +136,39 @@
 
 /* Titre cartoon : contour ink + ombre portée violette */
 @utility title-stroke {
-  color: var(--paper);
+  color: var(--accent-hex);
   text-shadow:
     -3px 0 0 var(--ink), 3px 0 0 var(--ink), 0 -3px 0 var(--ink),
-    0 3px 0 var(--ink), 0 6px 0 var(--primary-hex),
-    0 10px 16px rgba(0, 0, 0, 0.5);
+    0 3px 0 var(--ink), 0 7px 0 var(--accent-dark),
+    0 11px 16px rgba(42, 33, 24, 0.3);
 }
 
-/* Fond twilight avec halos or + violet */
-@utility bg-twilight {
-  background:
-    radial-gradient(circle at 70% 25%, rgba(255, 182, 39, 0.16), transparent 55%),
-    radial-gradient(circle at 18% 80%, rgba(122, 63, 200, 0.3), transparent 55%),
-    linear-gradient(180deg, #2b1638 0%, #1a0e2e 100%);
+/* Fond papier + trame de points façon BD : aucun dégradé. */
+@utility bg-paper-dots {
+  background-color: var(--background);
+  background-image: radial-gradient(
+    circle,
+    rgba(42, 33, 24, 0.08) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 24px 24px;
+}
+
+/* Bande verte pleine largeur : rythme la page et fait ressortir les captures. */
+@utility band-forest {
+  background-color: var(--primary-hex);
+  color: var(--paper);
+  background-image: radial-gradient(
+    circle,
+    rgba(255, 250, 235, 0.055) 1.5px,
+    transparent 1.5px
+  );
+  background-size: 24px 24px;
 }
 
 /* Carte cartoon papier */
 @utility card-paper {
-  background: linear-gradient(180deg, #fffaeb 0%, #ffe9b0 100%);
+  background: linear-gradient(180deg, #fffdf6 0%, #fff3d4 100%);
   border: 3px solid var(--ink);
   border-radius: var(--radius);
   box-shadow:
@@ -154,95 +177,71 @@
   color: var(--ink);
 }
 
-/* Boutons chunky 3D */
+/* Boutons : pilule plate à contour encre (réf. El Taxico), pas de pile 3D */
 @utility btn-game {
   position: relative;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  border-radius: 22px;
+  border-radius: 999px;
   font-family: var(--font-display), sans-serif;
   font-size: 18px;
   font-weight: 400;
   letter-spacing: 0.5px;
-  padding: 13px 26px 15px;
-  color: #fff;
+  padding: 12px 26px;
+  color: var(--ink);
   cursor: pointer;
-  border: 4px solid var(--ink);
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--primary-hex) 40%, #fff) 0%,
-    var(--primary-hex) 35%,
-    var(--primary-hex) 65%,
-    var(--primary-dark) 100%
-  );
-  box-shadow:
-    inset 0 -6px 0 0 rgba(0, 0, 0, 0.22),
-    inset 0 6px 0 0 rgba(255, 255, 255, 0.32),
-    0 6px 0 0 var(--primary-dark), 0 8px 0 0 var(--ink),
-    0 10px 18px -4px rgba(43, 22, 56, 0.5);
-  text-shadow:
-    -2px 0 0 var(--primary-dark), 2px 0 0 var(--primary-dark),
-    0 -2px 0 var(--primary-dark), 0 2px 0 var(--primary-dark);
-  transition: transform 80ms ease, box-shadow 80ms ease;
+  border: 3px solid var(--ink);
+  background: linear-gradient(180deg, var(--gold) 0%, var(--accent-hex) 100%);
+  box-shadow: 0 4px 14px -2px rgba(42, 33, 24, 0.35);
+  transition: transform 100ms ease, box-shadow 100ms ease;
 }
 @utility btn-game-active {
+  &:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 7px 18px -4px rgba(42, 33, 24, 0.4);
+  }
   &:active {
-    transform: translateY(4px);
+    transform: translateY(1px);
+    box-shadow: 0 2px 8px -2px rgba(42, 33, 24, 0.35);
   }
 }
 
-/* Variante verte (action positive : JOUER / s'inscrire) */
+/* Variante verte (action positive) */
 @utility btn-game-hp {
-  background: linear-gradient(
-    180deg,
-    color-mix(in srgb, var(--hp) 45%, #fff) 0%,
-    var(--hp) 40%,
-    var(--hp) 65%,
-    var(--hp-dark) 100%
-  );
-  box-shadow:
-    inset 0 -6px 0 0 rgba(0, 0, 0, 0.22),
-    inset 0 6px 0 0 rgba(255, 255, 255, 0.4), 0 6px 0 0 var(--hp-dark),
-    0 8px 0 0 var(--ink), 0 10px 18px -4px rgba(43, 22, 56, 0.5);
-  text-shadow:
-    -2px 0 0 var(--hp-dark), 2px 0 0 var(--hp-dark), 0 -2px 0 var(--hp-dark),
-    0 2px 0 var(--hp-dark);
+  color: var(--paper);
+  background: linear-gradient(180deg, var(--hp) 0%, var(--hp-dark) 100%);
 }
 
-/* Variante or (CTA secondaire) */
+/* Variante or : c'est déjà la couleur par défaut, gardée pour la lisibilité */
 @utility btn-game-gold {
   color: var(--ink);
-  background: linear-gradient(
-    180deg,
-    #ffe9a8 0%,
-    var(--gold) 40%,
-    var(--accent-hex) 70%,
-    var(--accent-dark) 100%
-  );
-  box-shadow:
-    inset 0 -6px 0 0 rgba(0, 0, 0, 0.18),
-    inset 0 6px 0 0 rgba(255, 255, 255, 0.5), 0 6px 0 0 var(--accent-dark),
-    0 8px 0 0 var(--ink), 0 10px 18px -4px rgba(43, 22, 56, 0.5);
-  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
+  background: linear-gradient(180deg, var(--gold) 0%, var(--accent-hex) 100%);
+}
+
+/* Variante compacte pour la barre de navigation */
+@utility btn-game-sm {
+  border-width: 2px;
+  font-size: 15px;
+  padding: 9px 20px;
 }
 
 /* === Pages légales === */
 .legal-prose {
-  color: var(--muted-purple);
+  color: var(--muted-ink);
   font-weight: 600;
   line-height: 1.7;
 }
 .legal-prose h2 {
   font-family: var(--font-display), sans-serif;
-  color: var(--paper);
+  color: var(--ink);
   font-size: 1.5rem;
   margin: 2.25rem 0 0.75rem;
 }
 .legal-prose h3 {
   font-family: var(--font-display), sans-serif;
-  color: var(--label-gold);
+  color: var(--accent-dark);
   font-size: 1.1rem;
   margin: 1.4rem 0 0.5rem;
 }
@@ -327,14 +326,14 @@
   align-items: center;
   gap: 8px;
   background: linear-gradient(180deg, #ffd64a 0%, #c25e07 100%);
-  color: #2b1638;
+  color: var(--ink);
   font-family: var(--font-display), sans-serif;
   letter-spacing: 2px;
-  border: 3px solid #2b1638;
+  border: 3px solid var(--ink);
   border-radius: 999px;
   padding: 5px 16px 7px;
   box-shadow:
     inset 0 -2px 0 0 rgba(0, 0, 0, 0.2),
-    inset 0 1.5px 0 0 rgba(255, 255, 255, 0.4), 0 3px 0 0 #2b1638;
+    inset 0 1.5px 0 0 rgba(255, 255, 255, 0.4), 0 3px 0 0 var(--ink);
   text-shadow: 0 1px 0 rgba(255, 255, 255, 0.4);
 }

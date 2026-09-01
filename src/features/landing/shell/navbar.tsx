@@ -15,8 +15,8 @@ export function Navbar() {
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b-[3px] border-ink/60 bg-background/85 backdrop-blur-md">
-      <nav className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4">
+    <header className="sticky top-0 z-50 bg-primary text-paper">
+      <nav className="mx-auto flex h-20 max-w-6xl items-center justify-between px-4">
         <a href="#top" className="flex items-center gap-2 text-lg">
           <Image
             src={LOGO_SRC}
@@ -26,8 +26,8 @@ export function Navbar() {
             priority
             className="h-10 w-auto"
           />
-          <span className="font-display tracking-wide">
-            MONSTER<span className="text-accent"> CANNON</span>
+          <span className="font-display tracking-wide text-paper">
+            MONSTER<span className="text-gold"> CANNON</span>
           </span>
         </a>
 
@@ -36,7 +36,7 @@ export function Navbar() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm font-extrabold text-muted-foreground transition-colors hover:text-foreground"
+              className="text-sm font-extrabold text-primary-light transition-colors hover:text-paper"
             >
               {link.label}
             </a>

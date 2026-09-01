@@ -7,11 +7,11 @@ export function Features() {
   const items = t.raw("items") as Feature[];
 
   return (
-    <section id="features" className="border-b border-border/60 py-20">
+    <section id="features" className="band-forest py-20">
       <div className="mx-auto max-w-5xl px-4">
-        <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">
+        <h2 className="text-center text-3xl font-bold tracking-tight text-paper sm:text-4xl">
           {t.rich("heading", {
-            hl: (chunks) => <span className="text-accent">{chunks}</span>,
+            hl: (chunks) => <span className="text-gold">{chunks}</span>,
           })}
         </h2>
 
@@ -19,17 +19,17 @@ export function Features() {
           {items.map((f) => (
             <div
               key={f.tag}
-              className="flex flex-col gap-4 rounded-2xl border border-border bg-card p-6 sm:flex-row sm:items-center"
+              className="card-paper flex flex-col gap-4 p-6 sm:flex-row sm:items-center"
             >
-              <div className="flex size-14 shrink-0 items-center justify-center rounded-xl bg-secondary text-3xl">
+              <div className="flex size-14 shrink-0 items-center justify-center rounded-xl border-2 border-ink bg-gold text-3xl">
                 {f.emoji}
               </div>
               <div>
                 <p className="font-display text-xs uppercase tracking-wider text-label-gold">
                   {f.tag}
                 </p>
-                <h3 className="mt-1 text-lg font-semibold">{f.headline}</h3>
-                <p className="mt-1 text-muted-foreground">{f.body}</p>
+                <h3 className="mt-1 text-lg font-black">{f.headline}</h3>
+                <p className="mt-1 text-ink-soft">{f.body}</p>
               </div>
             </div>
           ))}

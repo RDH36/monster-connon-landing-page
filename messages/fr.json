@@ -2,7 +2,19 @@
   "meta": {
     "title": "Monster Cannon — Vise. Rebondis. Détruis tout.",
     "description": "Jeu de tir arcade à rebonds : vise le canon, fais ricocher ton boulet sur les murs et transperce la horde de monstres. Vagues infinies, 5 boss, 21 canons. Jouable hors ligne, gratuit, sans achat intégré.",
-    "ogDescription": "Un bon angle vaut mieux que la force brute. Vagues infinies, 5 boss, physique de rebond satisfaisante. Gratuit et jouable entièrement hors ligne."
+    "ogDescription": "Un bon angle vaut mieux que la force brute. Vagues infinies, 5 boss, physique de rebond satisfaisante. Gratuit et jouable entièrement hors ligne.",
+    "keywords": [
+      "jeu de tir arcade",
+      "jeu de rebond",
+      "roguelike mobile",
+      "jeu android gratuit",
+      "jeu hors ligne",
+      "vagues infinies",
+      "monster cannon",
+      "jeu de canon",
+      "jeu sans pub forcée",
+      "jeu sans achat intégré"
+    ]
   },
   "nav": {
     "game": "Le jeu",
@@ -17,19 +29,59 @@
     "badge": "🎮 DISPONIBLE SUR GOOGLE PLAY",
     "titleLine1": "VISE. REBONDIS.",
     "titleLine2": "DÉTRUIS TOUT.",
-    "subtitle": "Charge le canon, ajuste ton angle, et <hl>laisse le rebond faire le reste</hl>. Un bon angle vaut mieux que la force brute.",
-    "tags": [
-      "ARCADE À REBONDS",
-      "VAGUES INFINIES",
-      "HORS LIGNE",
-      "SANS ACHAT INTÉGRÉ"
-    ]
+    "subtitle": "Charge le canon, ajuste ton angle, et <hl>laisse le rebond faire le reste</hl>. Un bon angle vaut mieux que la force brute."
   },
   "trailer": {
     "label": "Trailer de Monster Cannon",
     "soundOn": "Activer le son",
     "soundOff": "Couper le son",
     "caption": "34 secondes de jeu, sans montage flatteur."
+  },
+  "highlights": {
+    "heading": "Tout est déjà dans le jeu.",
+    "body": "Pas de saison à attendre, pas de contenu à acheter. Tu télécharges, tu joues, tout est là.",
+    "pills": [
+      "VAGUES INFINIES",
+      "5 BOSS",
+      "21 CANONS",
+      "LABORATOIRE",
+      "CLASSEMENT MONDIAL",
+      "HORS LIGNE"
+    ]
+  },
+  "store": {
+    "heading": "Le jeu, <hl>en vrai.</hl>",
+    "subheading": "Les captures de la fiche Google Play, sans retouche.",
+    "alts": [
+      "Écran d'accueil de Monster Cannon — détruis la horde",
+      "Une fronde, mille monstres : le canon tire et le boulet ricoche",
+      "Cinq boss épiques t'attendent",
+      "Un boost à choisir à chaque fin de vague",
+      "Des canons à débloquer dans la boutique",
+      "Quêtes du jour et succès à paliers"
+    ]
+  },
+  "steps": {
+    "heading": "Comment on joue",
+    "subheading": "Un seul doigt, aucun tutoriel à subir. Une partie dure quelques minutes.",
+    "items": [
+      {
+        "title": "Touche et glisse",
+        "body": "Tu vises le canon au doigt. Rien d'autre à apprendre."
+      },
+      {
+        "title": "Lis la trajectoire",
+        "body": "Une ligne te montre exactement où le boulet va rebondir."
+      },
+      {
+        "title": "Relâche et regarde",
+        "body": "Le boulet ricoche sur les murs et traverse les monstres."
+      },
+      {
+        "title": "Enchaîne le combo",
+        "body": "Un seul tir bien placé peut nettoyer la moitié de l'écran."
+      }
+    ]
   },
   "solution": {
     "heading": "Un bon angle vaut mieux que la force brute. 💥",
@@ -54,47 +106,6 @@
         "icon": "🧪",
         "title": "Ce que tu gagnes reste acquis",
         "body": "Quatre améliorations permanentes payées en or : trois montent jusqu'au niveau 8, les PV du canon jusqu'au niveau 3. Tes canons débloqués, eux, sont à toi pour toujours."
-      }
-    ]
-  },
-  "screenshots": {
-    "heading": "Le jeu, <hl>en vrai.</hl>",
-    "subheading": "Captures prises dans la version actuelle, sans retouche.",
-    "items": [
-      {
-        "key": "01_vague_dense",
-        "tag": "Vagues infinies",
-        "caption": "La vague se sature, l'écran explose. Ça ne s'arrête jamais."
-      },
-      {
-        "key": "02_boss",
-        "tag": "5 boss",
-        "caption": "Blob King, Speedy, Guardian, Splitter, Overlord — aux vagues 10, 20, 30, 40 et 50."
-      },
-      {
-        "key": "03_boosts",
-        "tag": "Progression roguelike",
-        "caption": "En fin de vague, tu choisis ton boost. La run se construit à chaque partie."
-      },
-      {
-        "key": "06_combo",
-        "tag": "Physique satisfaisante",
-        "caption": "Un boulet, plusieurs rebonds, un gros combo et une pluie d'or."
-      },
-      {
-        "key": "07_boutique_canons",
-        "tag": "21 canons",
-        "caption": "Quatre gratuits, les autres de 12 000 à 400 000 or. Purement cosmétiques."
-      },
-      {
-        "key": "08_quetes",
-        "tag": "Quêtes & succès",
-        "caption": "Trois quêtes tirées chaque jour, huit chaînes de succès à paliers, payées en or."
-      },
-      {
-        "key": "09_classement",
-        "tag": "Classement mondial",
-        "caption": "Ta meilleure vague, face au monde entier."
       }
     ]
   },
@@ -202,7 +213,7 @@
       "Icônes : Twemoji (CC BY 4.0) · Lorc, game-icons.net (CC BY 3.0)",
       "Sons : rubberduck · Musique : 3xBlast — OpenGameArt (CC0)"
     ],
-    "copyright": "© {year} Monster Cannon — Par Raymond Dzery Hago. Disponible sur Google Play."
+    "copyright": "© {year} Monster Cannon — Par <a>Raymond Dzery Hago</a>. Disponible sur Google Play."
   },
   "lang": {
     "label": "Langue",

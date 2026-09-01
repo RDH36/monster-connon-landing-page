@@ -7,7 +7,6 @@ Landing page du jeu mobile *Monster Cannon* (arcade roguelike hypercasual cozy c
 - **Next.js 16** (App Router, Turbopack) + **React 19** + **TypeScript**
 - **Tailwind CSS v4** (config CSS-first dans `app/globals.css`)
 - **shadcn/ui** (style new-york) — `src/components/ui/`
-- **next-themes** — mono-thème **twilight** (forcé via `forcedTheme="dark"`)
 - **next-intl** — i18n **FR/EN** (routing `[locale]`, FR par défaut sans préfixe, EN sur `/en`)
 - **lucide-react** — icônes
 
@@ -20,34 +19,42 @@ Landing page du jeu mobile *Monster Cannon* (arcade roguelike hypercasual cozy c
 - **Toujours** importer `Link`/`usePathname`/`redirect` depuis `@/i18n/navigation` (pas `next/link`) pour les liens internes, afin de préserver la locale. Sélecteur de langue : `src/components/language-switcher.tsx`.
 - Pages légales : titres/dates/descriptions dans `messages` (`legalPages.*`) ; le **corps** est en composants par locale dans `src/features/legal/content/{fr,en}/` (la page choisit selon `locale`).
 
-## Design System (source : handoff Claude Design v1.0, RDH36)
+## Design System (v2 — papier + terrain, direction validée le 1er sept. 2026)
 
-Look **cozy cartoon** (réfs Clash Royale / Candy Crush), fond twilight violet.
+Look **cozy cartoon** (réfs Clash Royale / Candy Crush). Le violet twilight de la v1 a été
+abandonné : il « faisait IA ». La page alterne désormais **papier crème** et **bandes vert
+terrain**, comme les captures ASO du Play Store où la carte claire est posée sur une bande de
+couleur. Aucun dégradé flou nulle part — que des aplats et des bords francs.
 
-- **Polices** : `Lilita One` (titres, boutons — tout ce qui claque) + `Nunito` 800 (corps). `Lilita One` est appliqué automatiquement aux `h1..h4` (base layer).
+- **Polices** : `Titan One` (gros titres + boutons) + `Nunito` (corps, 700 par défaut).
+  `Titan One` est une fonte d'affiche : elle n'est appliquée qu'aux **`h1`/`h2`**. Les `h3`/`h4`
+  — titres de cartes, questions de FAQ — restent sur `Nunito` en 900, sinon c'est illisible en
+  petit (leçon apprise : tout mettre en fonte d'affiche a rendu la page pénible à lire).
 - **Palette** (tokens dans `app/globals.css`) :
-  - Primary `#7A3FC8` (violet), Primary-dark `#4A2390`
-  - Accent / Gold `#FFB627` / `#FFD64A`
-  - Ink (contours) `#2B1638`, Ink-soft (bordures cartes) `#5A3B7A`
-  - Paper `#FFFAEB`, Background `#1A0E2E`, Card `#2B1638`
-  - HP/positif `#62D547`, Boss `#FF3D81`, Gem `#2EE0CF`, Danger `#FF5A3F`
+  - Papier `#FFF3D8` (fond), Carte `#FFFAEB`, Encre `#2A2118` (contours + texte), Encre douce `#6E5C44`
+  - Vert terrain `#1E4526` (navbar, footer, bandes), Vert sombre `#12290F`, Vert clair `#B7CDBB`
+  - Or `#FFD64A` / Accent `#FFB627` (remplissages), Accent sombre `#C25E07` (texte accent sur papier)
+  - `--label-gold` `#8A4A0A` : la version lisible de l'or sur fond papier
+  - HP `#4FA82F`, Boss `#FF3D81`, Gem `#17A89B`, Danger `#D93B1F`
 - **Utilitaires custom** (`@utility` Tailwind v4) :
-  - `title-stroke` — titre cartoon (contour ink + ombre violette)
-  - `bg-twilight` — fond dégradé + halos or/violet
-  - `btn-game` / `btn-game-hp` (vert) / `btn-game-gold` / `btn-game-active` — boutons chunky 3D
+  - `title-stroke` — titre cartoon (rempli en or, contour encre, ombre accent-dark)
+  - `bg-paper-dots` — fond papier + trame de points façon BD
+  - `band-forest` — bande verte pleine largeur (captures, footer)
+  - `btn-game` / `btn-game-hp` / `btn-game-gold` / `btn-game-active` — boutons chunky 3D
   - `eyebrow-gold` — pilule eyebrow dorée
-  - `card-paper` — carte papier cartoon
+  - `card-paper` — carte papier cartoon (contour encre 3 px + ombre dure)
 - **Radii** : sm 10 / md 18 / lg 26 / xl 36 px.
-- Couleurs jeu exposées en utilitaires : `text-gold`, `text-hp`, `text-boss`, `text-gem`, `text-ink`, `bg-paper`, `border-ink-soft`, `text-label-gold`, `text-primary-light`, etc.
+- Le site est en thème **clair** (`colorScheme: light`, plus de classe `dark`).
 
-Le bundle de design original est dans `docs/` (référence). Les composants sections utilisent les tokens sémantiques shadcn (remappés sur la palette) → changer un token met à jour toute la page.
+Le bundle de design original est dans `docs/` (référence de la v1 violette). Les composants
+sections utilisent les tokens sémantiques shadcn (remappés sur la palette) → changer un token met
+à jour toute la page.
 
 ## Structure
 
 ```
 app/
-  layout.tsx        # polices Lilita/Nunito, metadata SEO, Providers, Toaster, lang="fr"
-  providers.tsx     # ThemeProvider forcedTheme="dark"
+  [locale]/layout.tsx # polices Lilita/Nunito, metadata SEO, thème clair
   page.tsx          # assemble les sections
   globals.css       # design system complet (palette, polices, @utility)
   confidentialite-jeu/  # Confidentialité DU JEU (RGPD + Google Play) — pour la fiche store
@@ -60,11 +67,13 @@ src/
   features/landing/
     assets.ts       # PLAY_URL + helpers de chemins vers public/game
     shell/          # navbar, footer, play-badge (badge officiel + bouton navbar)
-    showcase/       # hero, trailer, phone-frame, screenshots
-    pitch/          # solution, features, faq, final-cta
-  features/legal/   # legal-layout.tsx (+ CONTACT_EMAIL = raymond.dzeryhago36@gmail.com)
+    showcase/       # hero, trailer, phone-frame, store-gallery
+    pitch/          # highlights, steps, solution, features, faq, final-cta
+  features/legal/   # legal-layout.tsx (+ CONTACT_EMAIL = contact@dzeryhago.com)
 public/
-  game/             # trailer_720.mp4, poster.jpg, 7 captures × FR/EN (copiés du dépôt du jeu)
+  game/             # trailer_720.mp4 + poster.jpg (vertical, cadre téléphone)
+                    # hero_bg.mp4 + poster (trailer paysage réencodé, fond du hero)
+  store/            # les 6 captures de la fiche Play × FR/EN (exports screenshoot-app)
   badges/           # badge officiel Google Play (FR/EN), à servir sans modification
   og.jpg            # image Open Graph / Twitter
 docs/
@@ -73,6 +82,18 @@ docs/
 ```
 
 Alias d'import : `@/*` → `./src/*`, `@/app/*` → `./app/*`.
+
+## SEO
+
+- `src/lib/seo.ts` — `SITE_URL`, la liste des `ROUTES` et les helpers d'URL. **Toute nouvelle page
+  doit être ajoutée à `ROUTES`** : le sitemap et les hreflang en découlent.
+- `app/sitemap.ts` et `app/robots.ts` — générés par Next (le middleware next-intl les ignore, son
+  matcher exclut les chemins contenant un point).
+- Canonique + `hreflang` fr/en/x-default sur chaque page, via `alternatesFor(locale, route)`.
+- Données structurées dans `src/features/landing/structured-data.tsx` : `VideoGame` (lie la page à
+  la fiche Play) + `FAQPage` (résultats enrichis). **Jamais de note ni de compteur d'installations**
+  tant qu'ils ne sont pas sourcés dans la Play Console.
+- `SITE_URL` = `https://monster-cannon.dzeryhago.com` (sous-domaine du portfolio de Raymond).
 
 ## Scripts
 

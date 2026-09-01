@@ -7,7 +7,7 @@ export function Solution() {
   const benefits = t.raw("benefits") as Benefit[];
 
   return (
-    <section className="border-b border-border/60 py-20">
+    <section className="py-20">
       <div className="mx-auto max-w-5xl px-4">
         <div className="mx-auto max-w-2xl text-center">
           <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
@@ -20,11 +20,11 @@ export function Solution() {
           {benefits.map((b) => (
             <div
               key={b.title}
-              className="rounded-2xl border border-border bg-card p-6 transition-colors hover:border-primary/50"
+              className="card-paper p-6 transition-transform hover:-translate-y-0.5"
             >
               <span className="text-3xl">{b.icon}</span>
-              <h3 className="mt-4 text-lg font-semibold">{b.title}</h3>
-              <p className="mt-2 text-muted-foreground">{b.body}</p>
+              <h3 className="mt-4 text-lg font-black">{b.title}</h3>
+              <p className="mt-2 text-ink-soft">{b.body}</p>
             </div>
           ))}
         </div>

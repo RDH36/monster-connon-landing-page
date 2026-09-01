@@ -2,7 +2,19 @@
   "meta": {
     "title": "Monster Cannon — Aim. Bounce. Destroy everything.",
     "description": "Bounce-physics arcade shooter: aim the cannon, ricochet your ball off the walls and smash straight through the monster horde. Endless waves, 5 bosses, 21 cannons. Plays offline, free, no in-app purchases.",
-    "ogDescription": "Smart angles beat brute force. Endless waves, 5 bosses, satisfying bounce physics. Free and fully playable offline."
+    "ogDescription": "Smart angles beat brute force. Endless waves, 5 bosses, satisfying bounce physics. Free and fully playable offline.",
+    "keywords": [
+      "arcade shooter",
+      "bounce physics game",
+      "mobile roguelike",
+      "free android game",
+      "offline game",
+      "endless waves",
+      "monster cannon",
+      "cannon game",
+      "no forced ads game",
+      "no in-app purchases"
+    ]
   },
   "nav": {
     "game": "The game",
@@ -17,19 +29,59 @@
     "badge": "🎮 OUT NOW ON GOOGLE PLAY",
     "titleLine1": "AIM. BOUNCE.",
     "titleLine2": "DESTROY EVERYTHING.",
-    "subtitle": "Load the cannon, take aim, and <hl>let the bounce do the rest</hl>. Smart angles beat brute force.",
-    "tags": [
-      "BOUNCE ARCADE",
-      "ENDLESS WAVES",
-      "PLAYS OFFLINE",
-      "NO IN-APP PURCHASES"
-    ]
+    "subtitle": "Load the cannon, take aim, and <hl>let the bounce do the rest</hl>. Smart angles beat brute force."
   },
   "trailer": {
     "label": "Monster Cannon trailer",
     "soundOn": "Turn sound on",
     "soundOff": "Turn sound off",
     "caption": "34 seconds of the real game, no flattering cuts."
+  },
+  "highlights": {
+    "heading": "It's all already in the game.",
+    "body": "No season to wait for, no content to buy. You download it, you play, everything is there.",
+    "pills": [
+      "ENDLESS WAVES",
+      "5 BOSSES",
+      "21 CANNONS",
+      "THE LAB",
+      "GLOBAL LEADERBOARD",
+      "PLAYS OFFLINE"
+    ]
+  },
+  "store": {
+    "heading": "The game, <hl>for real.</hl>",
+    "subheading": "The screenshots from the Google Play listing, untouched.",
+    "alts": [
+      "Monster Cannon home screen — smash the horde",
+      "One sling, a thousand monsters: the cannon fires and the ball ricochets",
+      "Five epic bosses are waiting",
+      "One boost to pick at the end of every wave",
+      "Cannons to unlock in the shop",
+      "Daily quests and tiered achievements"
+    ]
+  },
+  "steps": {
+    "heading": "How to play",
+    "subheading": "One finger, no tutorial to sit through. A run lasts minutes, not hours.",
+    "items": [
+      {
+        "title": "Touch and drag",
+        "body": "You aim the cannon with your finger. Nothing else to learn."
+      },
+      {
+        "title": "Read the trajectory",
+        "body": "A line shows exactly where the ball will bounce."
+      },
+      {
+        "title": "Release and watch",
+        "body": "The ball ricochets off the walls and pierces through monsters."
+      },
+      {
+        "title": "Chain the combo",
+        "body": "One perfect shot can clear half the screen."
+      }
+    ]
   },
   "solution": {
     "heading": "Smart angles beat brute force. 💥",
@@ -54,47 +106,6 @@
         "icon": "🧪",
         "title": "What you earn stays yours",
         "body": "Four permanent upgrades paid in gold: three go up to level 8, the cannon's HP up to level 3. The cannons you unlock stay with you forever."
-      }
-    ]
-  },
-  "screenshots": {
-    "heading": "The game, <hl>for real.</hl>",
-    "subheading": "Captured in the current build, untouched.",
-    "items": [
-      {
-        "key": "01_vague_dense",
-        "tag": "Endless waves",
-        "caption": "The wave saturates, the screen explodes. It never stops."
-      },
-      {
-        "key": "02_boss",
-        "tag": "5 bosses",
-        "caption": "Blob King, Speedy, Guardian, Splitter, Overlord — at waves 10, 20, 30, 40 and 50."
-      },
-      {
-        "key": "03_boosts",
-        "tag": "Roguelike progression",
-        "caption": "At the end of each wave, you pick your boost. Every run builds differently."
-      },
-      {
-        "key": "06_combo",
-        "tag": "Satisfying physics",
-        "caption": "One ball, several bounces, a fat combo and a shower of gold."
-      },
-      {
-        "key": "07_boutique_canons",
-        "tag": "21 cannons",
-        "caption": "Four free, the rest from 12,000 to 400,000 gold. Purely cosmetic."
-      },
-      {
-        "key": "08_quetes",
-        "tag": "Quests & achievements",
-        "caption": "Three quests drawn every day, eight tiered achievement chains, all paid in gold."
-      },
-      {
-        "key": "09_classement",
-        "tag": "Global leaderboard",
-        "caption": "Your best wave, against the whole world."
       }
     ]
   },
@@ -202,7 +213,7 @@
       "Icons: Twemoji (CC BY 4.0) · Lorc, game-icons.net (CC BY 3.0)",
       "Sounds: rubberduck · Music: 3xBlast — OpenGameArt (CC0)"
     ],
-    "copyright": "© {year} Monster Cannon — By Raymond Dzery Hago. Out now on Google Play."
+    "copyright": "© {year} Monster Cannon — By <a>Raymond Dzery Hago</a>. Out now on Google Play."
   },
   "lang": {
     "label": "Language",

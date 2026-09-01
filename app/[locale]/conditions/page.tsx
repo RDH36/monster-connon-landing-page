@@ -4,6 +4,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import TermsSiteEn from "@/features/legal/content/en/terms-site";
 import TermsSiteFr from "@/features/legal/content/fr/terms-site";
 import { LegalLayout } from "@/features/legal/legal-layout";
+import { alternatesFor } from "@/lib/seo";
 
 export async function generateMetadata({
   params,
@@ -12,7 +13,11 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "legalPages.termsSite" });
-  return { title: `${t("title")} — Monster Cannon`, description: t("description") };
+  return {
+    title: `${t("title")} — Monster Cannon`,
+    description: t("description"),
+    alternates: alternatesFor(locale, "/conditions"),
+  };
 }
 
 export default async function Page({

@@ -9,6 +9,7 @@ export function LanguageSwitcher() {
   const pathname = usePathname();
   const locale = useLocale();
 
+  // Le sélecteur ne vit que dans la navbar verte : couleurs pensées pour ce fond.
   return (
     <div className="flex items-center gap-1 font-display text-xs">
       <Link
@@ -17,21 +18,21 @@ export function LanguageSwitcher() {
         className={cn(
           "transition-colors",
           locale === "fr"
-            ? "text-accent"
-            : "text-muted-foreground hover:text-foreground",
+            ? "text-gold"
+            : "text-primary-light hover:text-paper",
         )}
       >
         FR
       </Link>
-      <span className="text-ink-soft">/</span>
+      <span className="text-primary-light/50">/</span>
       <Link
         href={pathname}
         locale="en"
         className={cn(
           "transition-colors",
           locale === "en"
-            ? "text-accent"
-            : "text-muted-foreground hover:text-foreground",
+            ? "text-gold"
+            : "text-primary-light hover:text-paper",
         )}
       >
         EN

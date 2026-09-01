@@ -28,7 +28,7 @@ export function Trailer() {
 
   return (
     <div className="mx-auto flex w-full max-w-[300px] flex-col items-center gap-3 lg:-translate-y-6">
-      <PhoneFrame className="lg:rotate-[4deg]">
+      <PhoneFrame>
         <video
           ref={videoRef}
           src={TRAILER_SRC}
@@ -56,7 +56,7 @@ export function Trailer() {
         </button>
       </PhoneFrame>
 
-      <p className="text-center text-xs font-bold text-dim-purple">
+      <p className="text-center text-xs font-bold text-paper/60">
         {t("caption")}
       </p>
     </div>
