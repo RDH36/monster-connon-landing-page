@@ -108,19 +108,20 @@ export default function PrivacyGameEn() {
       <h2>6. Purposes and legal bases</h2>
       <ul>
         <li>
-          Enabling the Game to work and saving your progress locally —{" "}
+          Enabling the Game to work and saving your progress locally, for the{" "}
           <strong>performance of the service</strong>.
         </li>
         <li>
-          Serving rewarded ads that you choose to watch — <strong>your consent</strong>
-          , collected in the Game before they are shown.
+          Serving rewarded ads that you choose to watch, with{" "}
+          <strong>your consent</strong>, collected in the Game before they are
+          shown.
         </li>
         <li>
           Measuring how the Game is used, anonymously, to balance it and fix
-          crashes — <strong>legitimate interest</strong>.
+          crashes, under our <strong>legitimate interest</strong>.
         </li>
         <li>
-          Showing your best wave on the global leaderboard —{" "}
+          Showing your best wave on the global leaderboard, for the{" "}
           <strong>performance of the service</strong>.
         </li>
       </ul>
@@ -154,8 +155,8 @@ export default function PrivacyGameEn() {
       <p>
         Under the GDPR, you have the right to access, rectification, erasure,
         restriction, objection and portability. As we store no identifying data on
-        our servers — usage statistics are anonymous and the leaderboard only holds
-        your best wave — these rights are mainly exercised via your device and the
+        our servers (usage statistics are anonymous and the leaderboard only holds
+        your best wave), these rights are mainly exercised via your device and the
         ad networks&apos; settings. For any request, email us at{" "}
         <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. You may also lodge
         a complaint with the relevant data protection authority.

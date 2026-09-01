@@ -85,6 +85,10 @@ export default async function LocaleLayout({
       lang={locale}
       className={`${titan.variable} ${nunito.variable} h-full antialiased`}
       style={{ colorScheme: "light" }}
+      // Le script ci-dessous pose `data-js` sur <html> avant l'hydratation :
+      // l'attribut est donc absent du HTML serveur, et c'est voulu : sans lui,
+      // rien ne serait masqué quand JS est indisponible.
+      suppressHydrationWarning
     >
       <head>
         {/* Avant le premier rendu : sans ce marqueur, rien n'est masqué. */}

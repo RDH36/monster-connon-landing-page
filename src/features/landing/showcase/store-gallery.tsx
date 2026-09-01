@@ -11,7 +11,7 @@ import {
 } from "@/features/landing/assets";
 
 /**
- * Les captures du store, telles quelles — bandes de légende comprises.
+ * Les captures du store, telles quelles, bandes de légende comprises.
  * La page raconte donc exactement la même histoire que la fiche.
  */
 export function StoreGallery() {

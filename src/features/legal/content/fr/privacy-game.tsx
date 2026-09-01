@@ -114,20 +114,21 @@ export default function PrivacyGameFr() {
       <ul>
         <li>
           Permettre le fonctionnement du Jeu et sauvegarder ta progression en
-          local — <strong>exécution du service</strong>.
+          local, au titre de l&apos;<strong>exécution du service</strong>.
         </li>
         <li>
-          Diffuser des publicités récompensées que tu choisis de regarder —{" "}
+          Diffuser des publicités récompensées que tu choisis de regarder, avec{" "}
           <strong>ton consentement</strong>, recueilli dans le Jeu avant la
           diffusion.
         </li>
         <li>
           Mesurer l&apos;usage du Jeu de façon anonyme pour l&apos;équilibrer et
-          corriger les plantages — <strong>intérêt légitime</strong>.
+          corriger les plantages, au titre de notre{" "}
+          <strong>intérêt légitime</strong>.
         </li>
         <li>
-          Afficher ta meilleure vague dans le classement mondial —{" "}
-          <strong>exécution du service</strong>.
+          Afficher ta meilleure vague dans le classement mondial, au titre de
+          l&apos;<strong>exécution du service</strong>.
         </li>
       </ul>
 
@@ -164,8 +165,8 @@ export default function PrivacyGameFr() {
         Conformément au RGPD, tu disposes d&apos;un droit d&apos;accès, de
         rectification, d&apos;effacement, de limitation, d&apos;opposition et de
         portabilité. Comme nous ne stockons aucune donnée identifiante sur nos
-        serveurs — les statistiques d&apos;usage sont anonymes et le classement ne
-        contient que ta meilleure vague — ces droits s&apos;exercent principalement
+        serveurs (les statistiques d&apos;usage sont anonymes et le classement ne
+        contient que ta meilleure vague), ces droits s&apos;exercent principalement
         via ton appareil et les paramètres des régies publicitaires. Pour toute demande, écris-nous à{" "}
         <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>. Tu peux aussi
         saisir l&apos;autorité de protection des données compétente.

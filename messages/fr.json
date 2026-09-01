@@ -1,6 +1,6 @@
 {
   "meta": {
-    "title": "Monster Cannon — Vise. Rebondis. Détruis tout.",
+    "title": "Monster Cannon : Vise. Rebondis. Détruis tout.",
     "description": "Jeu de tir arcade à rebonds : vise le canon, fais ricocher ton boulet sur les murs et transperce la horde de monstres. Vagues infinies, 5 boss, 21 canons. Jouable hors ligne, gratuit, sans achat intégré.",
     "ogDescription": "Un bon angle vaut mieux que la force brute. Vagues infinies, 5 boss, physique de rebond satisfaisante. Gratuit et jouable entièrement hors ligne.",
     "keywords": [
@@ -53,7 +53,7 @@
     "heading": "Le jeu, <hl>en vrai.</hl>",
     "subheading": "Les captures de la fiche Google Play, sans retouche.",
     "alts": [
-      "Écran d'accueil de Monster Cannon — détruis la horde",
+      "Écran d'accueil de Monster Cannon : détruis la horde",
       "Une fronde, mille monstres : le canon tire et le boulet ricoche",
       "Cinq boss épiques t'attendent",
       "Un boost à choisir à chaque fin de vague",
@@ -116,7 +116,7 @@
         "emoji": "👹",
         "tag": "Cinq boss",
         "headline": "Bats un boss, sa mécanique reste.",
-        "body": "Blob King, Speedy, Guardian, Splitter et Overlord t'attendent aux vagues 10, 20, 30, 40 et 50. Chacun apporte une nouvelle mécanique — obstacles, boucliers, monstres qui se divisent — et une fois battu, elle rejoint définitivement les vagues normales."
+        "body": "Blob King, Speedy, Guardian, Splitter et Overlord t'attendent aux vagues 10, 20, 30, 40 et 50. Chacun apporte une nouvelle mécanique (obstacles, boucliers, monstres qui se divisent), et une fois battu, elle rejoint définitivement les vagues normales."
       },
       {
         "emoji": "📐",
@@ -140,7 +140,7 @@
         "emoji": "🏆",
         "tag": "Quêtes & succès",
         "headline": "Toujours une bonne raison de relancer demain.",
-        "body": "Trois quêtes tirées chaque jour et huit chaînes de succès à paliers, toutes payées en or — l'or qui finance le laboratoire et les canons."
+        "body": "Trois quêtes tirées chaque jour et huit chaînes de succès à paliers, toutes payées en or, celui qui finance le laboratoire et les canons."
       },
       {
         "emoji": "🌍",
@@ -183,7 +183,7 @@
       },
       {
         "q": "Le jeu est-il en français ?",
-        "a": "Oui — français et anglais, changeable à tout moment dans les réglages."
+        "a": "Oui, français et anglais, changeable à tout moment dans les réglages."
       },
       {
         "q": "Le jeu collecte-t-il mes données ?",
@@ -211,9 +211,9 @@
     "creditsTitle": "Crédits",
     "credits": [
       "Icônes : Twemoji (CC BY 4.0) · Lorc, game-icons.net (CC BY 3.0)",
-      "Sons : rubberduck · Musique : 3xBlast — OpenGameArt (CC0)"
+      "Sons : rubberduck · Musique : 3xBlast · OpenGameArt (CC0)"
     ],
-    "copyright": "© {year} Monster Cannon — Par <a>Raymond Dzery Hago</a>. Disponible sur Google Play."
+    "copyright": "© {year} Monster Cannon. Par <a>Raymond Dzery Hago</a>. Disponible sur Google Play."
   },
   "lang": {
     "label": "Langue",

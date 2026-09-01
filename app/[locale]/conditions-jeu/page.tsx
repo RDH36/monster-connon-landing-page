@@ -14,7 +14,7 @@ export async function generateMetadata({
   const { locale } = await params;
   const t = await getTranslations({ locale, namespace: "legalPages.termsGame" });
   return {
-    title: `${t("title")} — Monster Cannon`,
+    title: `${t("title")} · Monster Cannon`,
     description: t("description"),
     alternates: alternatesFor(locale, "/conditions-jeu"),
   };

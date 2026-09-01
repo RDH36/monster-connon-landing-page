@@ -5,7 +5,7 @@ export default function TermsGameFr() {
   return (
     <>
       <p>
-        Les présentes conditions (« CLUF » — Contrat de Licence Utilisateur Final)
+        Les présentes conditions (« CLUF », pour Contrat de Licence Utilisateur Final)
         encadrent ton utilisation du jeu mobile <strong>Monster Cannon</strong>{" "}
         (« le Jeu »). En téléchargeant, installant ou jouant au Jeu, tu acceptes
         ces conditions. Si tu ne les acceptes pas, n&apos;installe pas et

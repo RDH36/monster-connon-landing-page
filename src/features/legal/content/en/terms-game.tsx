@@ -5,7 +5,7 @@ export default function TermsGameEn() {
   return (
     <>
       <p>
-        These terms (the &quot;EULA&quot; — End User License Agreement) govern your
+        These terms (the &quot;EULA&quot;, for End User License Agreement) govern your
         use of the <strong>Monster Cannon</strong> mobile game (&quot;the
         Game&quot;). By downloading, installing or playing the Game, you accept
         these terms. If you do not accept them, do not install or use the Game.

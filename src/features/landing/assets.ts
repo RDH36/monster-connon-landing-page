@@ -10,7 +10,7 @@
 export const PLAY_URL =
   "https://play.google.com/store/apps/details?id=com.rdh36.mosntercannon";
 
-/** Portfolio de l'auteur — le site vit sur un sous-domaine de ce domaine. */
+/** Portfolio de l'auteur : le site vit sur un sous-domaine de ce domaine. */
 export const PORTFOLIO_URL = "https://dzeryhago.com";
 
 export const TRAILER_SRC = "/game/trailer_720.mp4";
@@ -31,7 +31,7 @@ export function shotLocale(locale: string): ShotLocale {
   return locale === "fr" ? "fr" : "en";
 }
 
-/** Sprite du Blob King, le boss de la vague 10 — sert de logo au site. */
+/** Sprite du Blob King, le boss de la vague 10 : sert de logo au site. */
 export const LOGO_SRC = "/blob-king.png";
 
 /** Badge officiel Google Play, décliné par langue. */

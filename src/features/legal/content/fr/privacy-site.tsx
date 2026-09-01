@@ -25,7 +25,7 @@ export default function PrivacySiteFr() {
       <p>
         Le Site est une page de présentation : il ne contient{" "}
         <strong>aucun formulaire</strong> et ne te demande{" "}
-        <strong>aucune donnée personnelle</strong> — ni adresse e-mail, ni compte,
+        <strong>aucune donnée personnelle</strong> : ni adresse e-mail, ni compte,
         ni inscription.
       </p>
       <ul>
@@ -58,8 +58,8 @@ export default function PrivacySiteFr() {
         <li>
           <strong>Progression de jeu</strong> : ton record, ton or et tes canons
           sont enregistrés <strong>localement sur ton appareil</strong> (aucun
-          compte requis). Le détail des données envoyées par le jeu —
-          statistiques d&apos;usage anonymes et classement mondial — figure sur la
+          compte requis). Le détail des données envoyées par le jeu
+          (statistiques d&apos;usage anonymes et classement mondial) figure sur la
           page « Confidentialité du jeu ».
         </li>
         <li>
@@ -74,18 +74,18 @@ export default function PrivacySiteFr() {
       <h2>3. Finalités et bases légales</h2>
       <ul>
         <li>
-          Assurer le bon fonctionnement et la sécurité du Site —{" "}
-          <strong>base légale : notre intérêt légitime</strong>.
+          Assurer le bon fonctionnement et la sécurité du Site.{" "}
+          <strong>Base légale : notre intérêt légitime</strong>.
         </li>
         <li>
-          Mesurer l&apos;audience du Site de façon anonyme et sans cookie —{" "}
-          <strong>base légale : notre intérêt légitime</strong>. Aucun
+          Mesurer l&apos;audience du Site de façon anonyme et sans cookie.{" "}
+          <strong>Base légale : notre intérêt légitime</strong>. Aucun
           consentement n&apos;est requis puisque rien n&apos;est déposé sur ton
           appareil et qu&apos;aucune donnée personnelle n&apos;est conservée.
         </li>
         <li>
-          Diffuser des publicités récompensées dans le Jeu —{" "}
-          <strong>base légale : ton consentement</strong>, recueilli dans le Jeu.
+          Diffuser des publicités récompensées dans le Jeu.{" "}
+          <strong>Base légale : ton consentement</strong>, recueilli dans le Jeu.
         </li>
       </ul>
 
@@ -118,7 +118,7 @@ export default function PrivacySiteFr() {
       <h2>7. Cookies</h2>
       <p>
         Le Site ne dépose <strong>aucun cookie</strong> : ni cookie publicitaire,
-        ni cookie de pistage, ni même de cookie de mesure d&apos;audience — l&apos;outil
+        ni cookie de pistage, ni même de cookie de mesure d&apos;audience : l&apos;outil
         de statistiques utilisé fonctionne sans en poser. C&apos;est pourquoi tu ne
         vois aucune bannière de consentement.
       </p>

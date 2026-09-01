@@ -53,7 +53,7 @@ export function Hero() {
 /**
  * Le trailer en fond, comme les fiches Google Play sur le web : la version
  * paysage a ses bords floutés, elle remplit donc la largeur sans bandes noires.
- * Vidéo réservée au desktop — sur mobile on sert l'affiche, pas 2,6 Mo.
+ * Vidéo réservée au desktop : sur mobile on sert l'affiche, pas 2,6 Mo.
  */
 function HeroBackdrop() {
   return (

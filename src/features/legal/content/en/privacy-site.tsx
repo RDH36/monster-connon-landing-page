@@ -23,7 +23,7 @@ export default function PrivacySiteEn() {
       <p>
         The Site is a presentation page: it contains{" "}
         <strong>no form</strong> and asks you for{" "}
-        <strong>no personal data</strong> — no email address, no account, no
+        <strong>no personal data</strong>: no email address, no account, no
         sign-up.
       </p>
       <ul>
@@ -54,8 +54,8 @@ export default function PrivacySiteEn() {
         <li>
           <strong>Game progress</strong>: your high score, gold and cannons are
           stored <strong>locally on your device</strong> (no account required).
-          What the game does send — anonymous usage statistics and the global
-          leaderboard — is detailed on the &quot;Game privacy&quot; page.
+          What the game does send (anonymous usage statistics and the global
+          leaderboard) is detailed on the &quot;Game privacy&quot; page.
         </li>
         <li>
           <strong>Rewarded ads</strong>: the Game uses a third-party ad network
@@ -68,18 +68,18 @@ export default function PrivacySiteEn() {
       <h2>3. Purposes and legal bases</h2>
       <ul>
         <li>
-          Ensuring the proper operation and security of the Site —{" "}
-          <strong>legal basis: our legitimate interest</strong>.
+          Ensuring the proper operation and security of the Site.{" "}
+          <strong>Legal basis: our legitimate interest</strong>.
         </li>
         <li>
-          Measuring the Site&apos;s audience anonymously and without cookies —{" "}
-          <strong>legal basis: our legitimate interest</strong>. No consent is
+          Measuring the Site&apos;s audience anonymously and without cookies.{" "}
+          <strong>Legal basis: our legitimate interest</strong>. No consent is
           required since nothing is stored on your device and no personal data is
           retained.
         </li>
         <li>
-          Serving rewarded ads in the Game —{" "}
-          <strong>legal basis: your consent</strong>, collected in the Game.
+          Serving rewarded ads in the Game.{" "}
+          <strong>Legal basis: your consent</strong>, collected in the Game.
         </li>
       </ul>
 
@@ -109,7 +109,7 @@ export default function PrivacySiteEn() {
       <h2>7. Cookies</h2>
       <p>
         The Site places <strong>no cookies at all</strong>: no advertising
-        cookies, no tracking cookies, not even analytics ones — the analytics tool
+        cookies, no tracking cookies, not even analytics ones: the analytics tool
         it uses works without them. That is why you see no consent banner.
       </p>
 

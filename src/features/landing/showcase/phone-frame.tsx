@@ -1,16 +1,16 @@
 import { cn } from "@/lib/utils";
 
 /**
- * Cadre iPhone calé sur la landing de Flipia, mesuré au pixel sur son rendu :
- * châssis 9/18,9, bord de 2,7 % identique sur les quatre côtés, Dynamic
- * Island en pilule, et surtout des coins **circulaires** : un rayon en %
- * donnerait des coins elliptiques (7 % de la largeur contre 7 % de la
- * hauteur), ce qui se voit immédiatement sur un cadre deux fois plus haut
- * que large. Mesuré chez Flipia : 37 px sur un châssis de 290 px de large.
+ * Cadre téléphone au style de la landing Flipia, mesuré sur son rendu :
+ * châssis noir, bord de 2,7 % identique sur les quatre côtés, coins
+ * **circulaires** (un rayon en % donne des coins elliptiques sur un cadre deux
+ * fois plus haut que large), Dynamic Island en pilule.
  *
- * L'écran est rempli d'un bord à l'autre (`object-cover` côté appelant) :
- * c'est ce qui fait lire l'ensemble comme un téléphone. Le trailer étant en
- * 9/16, il perd environ 9 % de chaque côté — préféré à des bandes.
+ * Une seule chose diffère de la référence, et elle est imposée par le média :
+ * l'écran est en 9/16, le format natif du trailer et des captures. Un écran
+ * d'iPhone en 9/18,9 obligerait soit à rogner 9 % de chaque côté (ce qui
+ * ampute le HUD du jeu), soit à laisser des bandes. Le châssis est donc un
+ * peu moins élancé, mais l'image est intégrale.
  */
 export function PhoneFrame({
   children,
@@ -29,17 +29,17 @@ export function PhoneFrame({
         <div className="pointer-events-none absolute -inset-6 rounded-[60px] bg-primary/15 blur-3xl" />
       )}
 
-      <div className="relative aspect-[9/18.9] rounded-[38px] bg-black p-[2.7%] shadow-[0_30px_60px_-12px_rgba(0,0,0,0.55)]">
+      <div className="relative rounded-[38px] bg-black p-[2.7%] shadow-[0_30px_60px_-12px_rgba(0,0,0,0.55)]">
         <div
           className={cn(
-            "relative size-full overflow-hidden rounded-[30px] bg-black",
+            "relative aspect-[9/16] w-full overflow-hidden rounded-[30px] bg-black",
             screenClassName,
           )}
         >
           {children}
 
-          {/* Dynamic Island */}
-          <span className="absolute left-1/2 top-[1.3%] z-10 h-[3.2%] w-[30%] -translate-x-1/2 rounded-full bg-black" />
+          {/* Dynamic Island : le centre du HUD du jeu est vide, elle ne masque rien. */}
+          <span className="absolute left-1/2 top-[1.6%] z-10 h-[2.6%] w-[30%] -translate-x-1/2 rounded-full bg-black" />
         </div>
       </div>
     </div>
