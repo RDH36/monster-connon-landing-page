@@ -28,9 +28,25 @@ export default function PrivacySiteEn() {
       </p>
       <ul>
         <li>
-          <strong>Technical data</strong>: data strictly necessary for the site to
-          work (IP address, browser type), processed anonymously for security and
-          audience measurement.
+          <strong>Audience measurement</strong>: the Site uses{" "}
+          <strong>Vercel Web Analytics</strong>, a{" "}
+          <strong>cookieless</strong> analytics tool. It counts page views and
+          records the referring site, country, device type and browser. Your IP
+          address is not kept: it is only used to compute an anonymous visit
+          identifier, rotated daily, which cannot be tied to a person or followed
+          from one site to another. See{" "}
+          <a
+            href="https://vercel.com/docs/analytics/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Vercel Analytics&apos; privacy policy
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Technical logs</strong>: the data needed to run and secure the
+          site (IP address, browser type), kept by the host and then deleted.
         </li>
       </ul>
       <h3>In the game</h3>
@@ -56,6 +72,12 @@ export default function PrivacySiteEn() {
           <strong>legal basis: our legitimate interest</strong>.
         </li>
         <li>
+          Measuring the Site&apos;s audience anonymously and without cookies —{" "}
+          <strong>legal basis: our legitimate interest</strong>. No consent is
+          required since nothing is stored on your device and no personal data is
+          retained.
+        </li>
+        <li>
           Serving rewarded ads in the Game —{" "}
           <strong>legal basis: your consent</strong>, collected in the Game.
         </li>
@@ -70,8 +92,9 @@ export default function PrivacySiteEn() {
 
       <h2>5. Sharing your data</h2>
       <p>
-        We never sell your data. The Site shares it only with its host, acting on
-        our behalf. The data processed within the Game (anonymous statistics, ad
+        We never sell your data. The Site shares it only with its host{" "}
+        <strong>Vercel</strong>, which also provides the audience measurement, and
+        which acts on our behalf. The data processed within the Game (anonymous statistics, ad
         networks) is described on the &quot;Game privacy&quot; page.
       </p>
 
@@ -85,8 +108,9 @@ export default function PrivacySiteEn() {
 
       <h2>7. Cookies</h2>
       <p>
-        The Site uses only cookies strictly necessary for its operation. No
-        advertising or third-party tracking cookies are placed on the Site.
+        The Site places <strong>no cookies at all</strong>: no advertising
+        cookies, no tracking cookies, not even analytics ones — the analytics tool
+        it uses works without them. That is why you see no consent banner.
       </p>
 
       <h2>8. Minors</h2>

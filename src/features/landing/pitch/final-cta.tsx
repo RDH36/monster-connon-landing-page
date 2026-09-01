@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 
+import { Reveal } from "@/components/reveal";
+
 import { PlayBadge } from "@/features/landing/shell/play-badge";
 
 export function FinalCta() {
@@ -8,7 +10,7 @@ export function FinalCta() {
 
   return (
     <section id="jouer" className="band-forest relative overflow-hidden py-24">
-      <div className="relative mx-auto flex max-w-3xl flex-col items-center px-4 text-center">
+      <Reveal className="relative mx-auto flex max-w-3xl flex-col items-center px-4 text-center">
         <h2 className="text-4xl font-extrabold tracking-tight text-paper sm:text-5xl">
           {t.rich("heading", {
             hl: (chunks) => (
@@ -30,7 +32,7 @@ export function FinalCta() {
             <span key={item}>{item}</span>
           ))}
         </div>
-      </div>
+      </Reveal>
     </section>
   );
 }

@@ -9,6 +9,7 @@ Landing page du jeu mobile *Monster Cannon* (arcade roguelike hypercasual cozy c
 - **shadcn/ui** (style new-york) — `src/components/ui/`
 - **next-intl** — i18n **FR/EN** (routing `[locale]`, FR par défaut sans préfixe, EN sur `/en`)
 - **lucide-react** — icônes
+- **@vercel/analytics** — mesure d'audience sans cookie (déclarée dans `/confidentialite`)
 
 > Pas de TanStack Query (landing statique). Pas de theme toggle : le design system est mono-thème.
 
@@ -43,6 +44,10 @@ couleur. Aucun dégradé flou nulle part — que des aplats et des bords francs.
   - `btn-game` / `btn-game-hp` / `btn-game-gold` / `btn-game-active` — boutons chunky 3D
   - `eyebrow-gold` — pilule eyebrow dorée
   - `card-paper` — carte papier cartoon (contour encre 3 px + ombre dure)
+- **Apparition au défilement** : `src/components/reveal.tsx` (IntersectionObserver) + les règles
+  `[data-reveal]` dans `globals.css`. Le masquage n'a lieu que si `data-js` est posé sur `<html>`
+  par le script inline du layout **et** hors `prefers-reduced-motion` : sans JS, rien ne disparaît.
+  Utiliser `as="li"` dans les listes et `delay` pour échelonner une grille.
 - **Radii** : sm 10 / md 18 / lg 26 / xl 36 px.
 - Le site est en thème **clair** (`colorScheme: light`, plus de classe `dark`).
 

@@ -30,9 +30,27 @@ export default function PrivacySiteFr() {
       </p>
       <ul>
         <li>
-          <strong>Données techniques</strong> : données strictement nécessaires au
-          fonctionnement du site (adresse IP, type de navigateur), traitées de
-          façon anonyme à des fins de sécurité et de mesure d&apos;audience.
+          <strong>Mesure d&apos;audience</strong> : le Site utilise{" "}
+          <strong>Vercel Web Analytics</strong>, un outil de statistiques{" "}
+          <strong>sans cookie</strong>. Il compte les pages vues et retient le
+          site référent, le pays, le type d&apos;appareil et le navigateur.
+          L&apos;adresse IP n&apos;est pas conservée : elle sert uniquement à
+          calculer un identifiant de visite anonyme, renouvelé chaque jour et
+          impossible à relier à une personne ou à suivre d&apos;un site à
+          l&apos;autre. Voir la{" "}
+          <a
+            href="https://vercel.com/docs/analytics/privacy-policy"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            politique de confidentialité de Vercel Analytics
+          </a>
+          .
+        </li>
+        <li>
+          <strong>Journaux techniques</strong> : les données nécessaires au
+          fonctionnement et à la sécurité du site (adresse IP, type de
+          navigateur), conservées par l&apos;hébergeur puis supprimées.
         </li>
       </ul>
       <h3>Dans le jeu</h3>
@@ -60,6 +78,12 @@ export default function PrivacySiteFr() {
           <strong>base légale : notre intérêt légitime</strong>.
         </li>
         <li>
+          Mesurer l&apos;audience du Site de façon anonyme et sans cookie —{" "}
+          <strong>base légale : notre intérêt légitime</strong>. Aucun
+          consentement n&apos;est requis puisque rien n&apos;est déposé sur ton
+          appareil et qu&apos;aucune donnée personnelle n&apos;est conservée.
+        </li>
+        <li>
           Diffuser des publicités récompensées dans le Jeu —{" "}
           <strong>base légale : ton consentement</strong>, recueilli dans le Jeu.
         </li>
@@ -75,7 +99,8 @@ export default function PrivacySiteFr() {
       <h2>5. Partage de tes données</h2>
       <p>
         Nous ne vendons jamais tes données. Le Site ne les partage qu&apos;avec son
-        hébergeur, agissant pour notre compte. Les données traitées dans le cadre
+        hébergeur <strong>Vercel</strong>, qui assure aussi la mesure
+        d&apos;audience, et qui agit pour notre compte. Les données traitées dans le cadre
         du Jeu (statistiques anonymes, régies publicitaires) sont décrites sur la
         page « Confidentialité du jeu ».
       </p>
@@ -92,9 +117,10 @@ export default function PrivacySiteFr() {
 
       <h2>7. Cookies</h2>
       <p>
-        Le Site utilise uniquement des cookies strictement nécessaires à son
-        fonctionnement. Aucun cookie publicitaire ni de pistage tiers n&apos;est
-        déposé sur le Site.
+        Le Site ne dépose <strong>aucun cookie</strong> : ni cookie publicitaire,
+        ni cookie de pistage, ni même de cookie de mesure d&apos;audience — l&apos;outil
+        de statistiques utilisé fonctionne sans en poser. C&apos;est pourquoi tu ne
+        vois aucune bannière de consentement.
       </p>
 
       <h2>8. Mineurs</h2>

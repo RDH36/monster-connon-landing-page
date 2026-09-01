@@ -1,5 +1,7 @@
 import { useTranslations } from "next-intl";
 
+import { Reveal } from "@/components/reveal";
+
 import { HERO_BG_POSTER, HERO_BG_SRC } from "@/features/landing/assets";
 import { PlayBadge } from "@/features/landing/shell/play-badge";
 
@@ -17,7 +19,7 @@ export function Hero() {
       <HeroBackdrop />
 
       <div className="relative z-10 mx-auto grid max-w-6xl gap-12 px-4 py-16 lg:grid-cols-2 lg:items-center lg:py-24">
-        <div className="flex flex-col items-start gap-6">
+        <Reveal className="flex flex-col items-start gap-6">
           <span className="eyebrow-gold text-xs sm:text-sm">{t("badge")}</span>
 
           <h1 className="title-stroke font-display text-5xl leading-[0.95] sm:text-6xl">
@@ -38,9 +40,11 @@ export function Hero() {
               {tPlay("note")}
             </span>
           </div>
-        </div>
+        </Reveal>
 
-        <Trailer />
+        <Reveal delay={140}>
+          <Trailer />
+        </Reveal>
       </div>
     </section>
   );

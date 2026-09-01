@@ -1,3 +1,4 @@
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import { Nunito, Titan_One } from "next/font/google";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -85,8 +86,17 @@ export default async function LocaleLayout({
       className={`${titan.variable} ${nunito.variable} h-full antialiased`}
       style={{ colorScheme: "light" }}
     >
+      <head>
+        {/* Avant le premier rendu : sans ce marqueur, rien n'est masqué. */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: 'document.documentElement.dataset.js=""',
+          }}
+        />
+      </head>
       <body className="min-h-full flex flex-col">
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
+        <Analytics />
       </body>
     </html>
   );

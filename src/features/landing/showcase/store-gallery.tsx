@@ -1,6 +1,8 @@
 import { useLocale, useTranslations } from "next-intl";
 import Image from "next/image";
 
+import { Reveal } from "@/components/reveal";
+
 import {
   SHOT_HEIGHT,
   SHOT_WIDTH,
@@ -20,19 +22,26 @@ export function StoreGallery() {
   return (
     <section id="screenshots" className="py-20">
       <div className="mx-auto max-w-6xl px-4">
-        <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">
-          {t.rich("heading", {
-            hl: (chunks) => <span className="text-accent">{chunks}</span>,
-          })}
-        </h2>
-        <p className="mt-3 text-center text-muted-foreground">
-          {t("subheading")}
-        </p>
+        <Reveal>
+          <h2 className="text-center text-3xl font-bold tracking-tight sm:text-4xl">
+            {t.rich("heading", {
+              hl: (chunks) => <span className="text-accent">{chunks}</span>,
+            })}
+          </h2>
+          <p className="mt-3 text-center text-muted-foreground">
+            {t("subheading")}
+          </p>
+        </Reveal>
 
         {/* Défilement horizontal sur mobile, grille au-delà. */}
         <ul className="mt-12 flex snap-x snap-mandatory gap-5 overflow-x-auto pb-4 md:grid md:grid-cols-3 md:overflow-visible lg:grid-cols-6">
           {STORE_SHOTS.map((key, i) => (
-            <li key={key} className="w-[190px] shrink-0 snap-center md:w-auto">
+            <Reveal
+              as="li"
+              key={key}
+              delay={i * 70}
+              className="w-[190px] shrink-0 snap-center md:w-auto"
+            >
               <Image
                 src={storeShotSrc(key, locale)}
                 alt={alts[i] ?? ""}
@@ -42,7 +51,7 @@ export function StoreGallery() {
                 loading="lazy"
                 className="w-full rounded-[18px] border-[3px] border-ink shadow-[0_6px_0_0_var(--ink)]"
               />
-            </li>
+            </Reveal>
           ))}
         </ul>
       </div>
