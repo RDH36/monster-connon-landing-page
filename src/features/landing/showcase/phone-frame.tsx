@@ -1,13 +1,13 @@
 import { cn } from "@/lib/utils";
 
 /**
- * Cadre téléphone repris au pixel des exports ASO
- * (screenshoot-app → exports/monster-cannon/.../iphone-6.9). Mesuré sur un
- * export 1320 px : châssis de 1280 px de large, bord de 45 px sur les quatre
- * côtés (3,5 %), rayon de 123 px (9,6 %), corps repeint en encre brune #2A2118 pour la palette papier.
+ * Cadre iPhone repris de screenshoot-app (`DeviceFrame iphone-15-pro` avec les
+ * surcharges du projet Flipia) : châssis noir en 9/19,5, coins à 7 %, bord de
+ * 2 %, écran à 5 %, Dynamic Island en pilule.
  *
- * Le ratio 1080/1920 est porté par l'écran, pas par le châssis : c'est celui
- * du trailer et des captures, donc le média remplit l'écran au pixel près.
+ * Le trailer est en 9/16, plus large que l'écran d'un iPhone : l'appelant
+ * l'affiche en `object-contain` par-dessus un fond flouté, plutôt que de le
+ * rogner et d'amputer le HUD du jeu.
  */
 export function PhoneFrame({
   children,
@@ -26,14 +26,17 @@ export function PhoneFrame({
         <div className="pointer-events-none absolute -inset-6 rounded-[60px] bg-primary/15 blur-3xl" />
       )}
 
-      <div className="relative rounded-[29px] border-2 border-[#5A4A34] bg-[#2A2118] p-[3.5%] shadow-[0_30px_60px_-15px_rgba(42,33,24,0.45)]">
+      <div className="relative aspect-[9/19.5] rounded-[7%] bg-black p-[2%] shadow-[0_30px_60px_-12px_rgba(0,0,0,0.55)]">
         <div
           className={cn(
-            "relative aspect-[1080/1920] w-full overflow-hidden rounded-[24px] bg-[#1B160F]",
+            "relative size-full overflow-hidden rounded-[5%] bg-black",
             screenClassName,
           )}
         >
           {children}
+
+          {/* Dynamic Island */}
+          <span className="absolute left-1/2 top-[1.3%] z-10 h-[3.2%] w-[30%] -translate-x-1/2 rounded-full bg-black" />
         </div>
       </div>
     </div>

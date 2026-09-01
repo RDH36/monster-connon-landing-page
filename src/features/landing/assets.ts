@@ -40,9 +40,9 @@ export function playBadgeSrc(locale: string) {
 }
 
 /**
- * Captures de la fiche Google Play (bandes de légende comprises), exportées
- * depuis screenshoot-app. C'est la galerie de la landing : la page montre
- * exactement ce que le visiteur verra sur le store.
+ * Captures du store (bandes de légende comprises), exportées depuis
+ * screenshoot-app au format App Store iPhone 6.9 : plus haut que l'export
+ * Play, il laisse voir le HUD du bas que celui-ci rognait.
  */
 export const STORE_SHOTS = [
   "01-hero",
@@ -57,6 +57,6 @@ export function storeShotSrc(key: string, locale: string) {
   return `/store/${key}_${shotLocale(locale)}.jpg`;
 }
 
-/** Format natif des captures (1080×1920). */
-export const SHOT_WIDTH = 1080;
-export const SHOT_HEIGHT = 1920;
+/** Format natif des exports App Store 6.9. */
+export const STORE_SHOT_WIDTH = 1320;
+export const STORE_SHOT_HEIGHT = 2868;

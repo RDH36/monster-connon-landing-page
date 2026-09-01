@@ -73,12 +73,15 @@ src/
     assets.ts       # PLAY_URL + helpers de chemins vers public/game
     shell/          # navbar, footer, play-badge (badge officiel + bouton navbar)
     showcase/       # hero, trailer, phone-frame, store-gallery
+                    # phone-frame reprend le DeviceFrame iphone-15-pro de
+                    # screenshoot-app (surcharges Flipia : rounded 7%, p 2%)
     pitch/          # highlights, steps, solution, features, faq, final-cta
   features/legal/   # legal-layout.tsx (+ CONTACT_EMAIL = contact@dzeryhago.com)
 public/
   game/             # trailer_720.mp4 + poster.jpg (vertical, cadre téléphone)
                     # hero_bg.mp4 + poster (trailer paysage réencodé, fond du hero)
-  store/            # les 6 captures de la fiche Play × FR/EN (exports screenshoot-app)
+  store/            # les 6 captures du store × FR/EN (exports screenshoot-app,
+                    # format App Store iPhone 6.9 : plus haut que l'export Play)
   badges/           # badge officiel Google Play (FR/EN), à servir sans modification
   og.jpg            # image Open Graph / Twitter
 docs/

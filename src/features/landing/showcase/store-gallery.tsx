@@ -4,15 +4,15 @@ import Image from "next/image";
 import { Reveal } from "@/components/reveal";
 
 import {
-  SHOT_HEIGHT,
-  SHOT_WIDTH,
   STORE_SHOTS,
+  STORE_SHOT_HEIGHT,
+  STORE_SHOT_WIDTH,
   storeShotSrc,
 } from "@/features/landing/assets";
 
 /**
- * Les captures de la fiche Google Play, telles quelles — bandes de légende
- * comprises. La page raconte donc exactement la même histoire que le store.
+ * Les captures du store, telles quelles — bandes de légende comprises.
+ * La page raconte donc exactement la même histoire que la fiche.
  */
 export function StoreGallery() {
   const t = useTranslations("store");
@@ -45,8 +45,8 @@ export function StoreGallery() {
               <Image
                 src={storeShotSrc(key, locale)}
                 alt={alts[i] ?? ""}
-                width={SHOT_WIDTH}
-                height={SHOT_HEIGHT}
+                width={STORE_SHOT_WIDTH}
+                height={STORE_SHOT_HEIGHT}
                 sizes="(min-width: 1024px) 180px, (min-width: 768px) 30vw, 190px"
                 loading="lazy"
                 className="w-full rounded-[18px] border-[3px] border-ink shadow-[0_6px_0_0_var(--ink)]"
