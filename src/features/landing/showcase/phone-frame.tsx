@@ -1,13 +1,16 @@
 import { cn } from "@/lib/utils";
 
 /**
- * Cadre iPhone repris de screenshoot-app (`DeviceFrame iphone-15-pro` avec les
- * surcharges du projet Flipia) : châssis noir en 9/19,5, coins à 7 %, bord de
- * 2 %, écran à 5 %, Dynamic Island en pilule.
+ * Cadre iPhone calé sur la landing de Flipia, mesuré au pixel sur son rendu :
+ * châssis 9/18,9, bord de 2,7 % identique sur les quatre côtés, Dynamic
+ * Island en pilule, et surtout des coins **circulaires** : un rayon en %
+ * donnerait des coins elliptiques (7 % de la largeur contre 7 % de la
+ * hauteur), ce qui se voit immédiatement sur un cadre deux fois plus haut
+ * que large. Mesuré chez Flipia : 37 px sur un châssis de 290 px de large.
  *
- * Le trailer est en 9/16, plus large que l'écran d'un iPhone : l'appelant
- * l'affiche en `object-contain` par-dessus un fond flouté, plutôt que de le
- * rogner et d'amputer le HUD du jeu.
+ * L'écran est rempli d'un bord à l'autre (`object-cover` côté appelant) :
+ * c'est ce qui fait lire l'ensemble comme un téléphone. Le trailer étant en
+ * 9/16, il perd environ 9 % de chaque côté — préféré à des bandes.
  */
 export function PhoneFrame({
   children,
@@ -26,10 +29,10 @@ export function PhoneFrame({
         <div className="pointer-events-none absolute -inset-6 rounded-[60px] bg-primary/15 blur-3xl" />
       )}
 
-      <div className="relative aspect-[9/19.5] rounded-[7%] bg-black p-[2%] shadow-[0_30px_60px_-12px_rgba(0,0,0,0.55)]">
+      <div className="relative aspect-[9/18.9] rounded-[38px] bg-black p-[2.7%] shadow-[0_30px_60px_-12px_rgba(0,0,0,0.55)]">
         <div
           className={cn(
-            "relative size-full overflow-hidden rounded-[5%] bg-black",
+            "relative size-full overflow-hidden rounded-[30px] bg-black",
             screenClassName,
           )}
         >

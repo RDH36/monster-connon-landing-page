@@ -29,14 +29,6 @@ export function Trailer() {
   return (
     <div className="mx-auto flex w-full max-w-[300px] flex-col items-center gap-3 lg:-translate-y-6">
       <PhoneFrame>
-        {/* L'écran d'iPhone est plus étroit que le 9/16 du jeu : plutôt que
-            de rogner le HUD, on comble avec l'affiche floutée. */}
-        <div
-          aria-hidden
-          className="absolute inset-0 scale-125 bg-cover bg-center blur-xl brightness-[0.55]"
-          style={{ backgroundImage: `url(${TRAILER_POSTER})` }}
-        />
-
         <video
           ref={videoRef}
           src={TRAILER_SRC}
@@ -47,7 +39,7 @@ export function Trailer() {
           loop
           playsInline
           preload="metadata"
-          className="relative size-full object-contain"
+          className="size-full object-cover"
         />
 
         <button
